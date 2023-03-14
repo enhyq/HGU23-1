@@ -11,11 +11,12 @@
 - [AI프로젝트입문](./ECE30007-01/README.md)
     - [Introduction](./ECE30007-01/week1.md)
         - [HW1](./ECE30007-01/hw1.md)
-    - [Week 2](./ECE30007-01/week2.md)
+    - [Python Basics](./ECE30007-01/week2.md)
 
 - [데이타베이스](./ECE30030-01/README.md)
     - [Introduction](./ECE30030-01/week1.md)
     - [Week 2](./ECE30030-01/week2.md)
+    - [Week 3](./ECE30030-01/week3.md)
 
 - [이공계 글쓰기](./GCS10011-01/README.md)
     - [Introduction](./GCS10011-01/week1.md)
@@ -37,12 +38,12 @@
 ---
 
 - [Web3@KAIST](./KAIST_CS492/README.md)
-    -[Empty](./KAIST_CS492/week1.md)
-    -[First Meeting](./KAIST_CS492/week2.md)
+    - [Empty](./KAIST_CS492/week1.md)
+    - [First Meeting](./KAIST_CS492/week2.md)
 
 - [GHOST Flutter Study](./GFS/README.md)
     - [Basic Widgets](./GFS/week1.md)
-    - [Week 2](./GFS/week2.md)
+    - [Widgets Continued](./GFS/week2.md)
 
 ---
 
