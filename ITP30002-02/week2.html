@@ -1,0 +1,395 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Process - HGU23-1</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../CCE33006-01/index.html"><strong aria-hidden="true">1.</strong> OpenAI and Art</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../CCE33006-01/week1.html"><strong aria-hidden="true">1.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../CCE33006-01/week2.html"><strong aria-hidden="true">1.2.</strong> Handong Universe</a></li></ol></li><li class="chapter-item expanded "><a href="../ECE30007-01/index.html"><strong aria-hidden="true">2.</strong> AI프로젝트입문</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECE30007-01/week1.html"><strong aria-hidden="true">2.1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECE30007-01/hw1.html"><strong aria-hidden="true">2.1.1.</strong> HW1</a></li></ol></li><li class="chapter-item expanded "><a href="../ECE30007-01/week2.html"><strong aria-hidden="true">2.2.</strong> Python Basics</a></li></ol></li><li class="chapter-item expanded "><a href="../ECE30030-01/index.html"><strong aria-hidden="true">3.</strong> 데이타베이스</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECE30030-01/week1.html"><strong aria-hidden="true">3.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../ECE30030-01/week2.html"><strong aria-hidden="true">3.2.</strong> Week 2</a></li><li class="chapter-item expanded "><a href="../ECE30030-01/week3.html"><strong aria-hidden="true">3.3.</strong> Week 3</a></li></ol></li><li class="chapter-item expanded "><a href="../GCS10011-01/index.html"><strong aria-hidden="true">4.</strong> 이공계 글쓰기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../GCS10011-01/week1.html"><strong aria-hidden="true">4.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../GCS10011-01/week2.html"><strong aria-hidden="true">4.2.</strong> Week 2</a></li></ol></li><li class="chapter-item expanded "><a href="../GEK10082-03/index.html"><strong aria-hidden="true">5.</strong> 선형대수학</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../GEK10082-03/week1.html"><strong aria-hidden="true">5.1.</strong> Ch1 s1</a></li><li class="chapter-item expanded "><a href="../GEK10082-03/week2.html"><strong aria-hidden="true">5.2.</strong> Ch1 s2-3</a></li></ol></li><li class="chapter-item expanded "><a href="../ITP30002-02/index.html"><strong aria-hidden="true">6.</strong> Operating Systems</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ITP30002-02/week1.html"><strong aria-hidden="true">6.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../ITP30002-02/week2.html" class="active"><strong aria-hidden="true">6.2.</strong> Process</a></li></ol></li><li class="chapter-item expanded "><a href="../ITP40003-01/index.html"><strong aria-hidden="true">7.</strong> Computer Graphics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ITP40003-01/week1.html"><strong aria-hidden="true">7.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../ITP40003-01/week2.html"><strong aria-hidden="true">7.2.</strong> Week 2</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../KAIST_CS492/index.html"><strong aria-hidden="true">8.</strong> Web3@KAIST</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../KAIST_CS492/week1.html"><strong aria-hidden="true">8.1.</strong> Empty</a></li><li class="chapter-item expanded "><a href="../KAIST_CS492/week2.html"><strong aria-hidden="true">8.2.</strong> First Meeting</a></li></ol></li><li class="chapter-item expanded "><a href="../GFS/index.html"><strong aria-hidden="true">9.</strong> GHOST Flutter Study</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../GFS/week1.html"><strong aria-hidden="true">9.1.</strong> Basic Widgets</a></li><li class="chapter-item expanded "><a href="../GFS/week2.html"><strong aria-hidden="true">9.2.</strong> Widgets Continued</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../Notes/index.html">Notes</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">HGU23-1</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="process"><a class="header" href="#process">Process</a></h1>
+<h2 id="39-thur"><a class="header" href="#39-thur">3/9 (Thur)</a></h2>
+<p><img src="img/23-03-10-14-25-59.png" alt="Lecture Note" /></p>
+<h3 id="lecture-summary"><a class="header" href="#lecture-summary">Lecture Summary</a></h3>
+<ul>
+<li>What kind of problems appear when sharing a computer?
+<ul>
+<li>How to decide who should use the computer at a specific time</li>
+<li>How to manage time of sharing</li>
+<li>A process taking over entire space</li>
+<li>A process corrupting the entire system</li>
+<li>many other..</li>
+</ul>
+</li>
+<li>OS is created to solve the problems that arise when sharing a common resource (CPU and memory)</li>
+</ul>
+<blockquote>
+<p>Time Sharing</p>
+</blockquote>
+<ul>
+<li>Time Sharing is the concept that is used in OS to share resources among multiple processes
+<ul>
+<li>It is divided into 2 smaller concepts
+<ol>
+<li>Mechanism</li>
+<li>Policies</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="notes-from-video"><a class="header" href="#notes-from-video">Notes from video</a></h2>
+<ul>
+<li>
+<p>Process</p>
+<ul>
+<li>a running instance of a program
+<ul>
+<li>program vs process</li>
+<li>static / dynamic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Constitution of Program Execution Content</p>
+<ul>
+<li>What kind of information are needed to be stored to resume process after pausing?</li>
+</ul>
+<ol>
+<li>Memory states
+<ul>
+<li>address space</li>
+<li>this just stays in the memory space</li>
+</ul>
+</li>
+<li>CPU states
+<ul>
+<li>this must be copied over to memory space to be safely stored</li>
+<li>registers: general-purpose and special-purpose</li>
+<li>cache: they are for performance of the CPU computation
+<ul>
+<li>When doing timesharing, cache can not be utilized most efficiently</li>
+<li>performance of the cache will be degraded</li>
+</ul>
+</li>
+<li>Recent computer architecture provide some functionality to utilize cache when performin context switching</li>
+</ul>
+</li>
+<li>I/O information</li>
+</ol>
+<ul>
+<li>Above 3 informations are needed
+<ul>
+<li>They are taken <strong>snapshot</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Life Cycle of a Process</p>
+<ul>
+<li>Process creation
+<ul>
+<li>resource allocation
+<ul>
+<li>independent space: memory space, </li>
+<li>every process open some basic files (stdin, stdout, stderr) -&gt; basic file resources</li>
+<li>under kernel, it manages some datastructure that manages currently running process. A new object must be created</li>
+</ul>
+</li>
+<li>loading : brining binary code (program) to address space of process (from disk storage)
+<ul>
+<li>eagle(?) (eagerly) manner</li>
+<li>lazy manner
+<ul>
+<li>
+<p>Instead of taking the whole snapshot of the program, only part of it is taken snapshot</p>
+</li>
+<li>
+<p>binary code</p>
+</li>
+<li>
+<p>executable code</p>
+<ul>
+<li>initial part of the code</li>
+</ul>
+</li>
+<li>
+<p><strong>decode the metadata of the program allignment</strong></p>
+<ul>
+<li><strong>decode</strong></li>
+<li><strong>metadata</strong></li>
+<li><strong>program allignment</strong></li>
+</ul>
+</li>
+<li>
+<p>Questions: does the programmer have to provide the initial instruction that can be loaded in lazy manner?</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Process</p>
+<ul>
+<li>a running instance of an application program</li>
+<li>a process is an object of OS to represent a status of a program execution</li>
+<li>a process progresses in an instruction-by-instruction fashion</li>
+<li>a program is a pssive entity resided in a storage (e.g. an executable file) whereas a process is an active entity of the CPU and memory status
+<ul>
+<li>a process starts when executable file loaded into memory</li>
+<li>multiple users may run multiple processes for a single program</li>
+<li>program -&gt; initial memory status of a process</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>A process is an object to hold all entities to represent the running status of a program</p>
+<ul>
+<li>CPU snapshot (kernel space)
+<ul>
+<li>Program counter</li>
+<li>Registers</li>
+</ul>
+</li>
+<li>Memory snapshot (user space)
+<ul>
+<li>program code (also called text section)</li>
+<li>Stack section: Function parameters, return addresses, local variables</li>
+<li>Data section: memory for containing global variables</li>
+<li>Heap section: memory for dynamically allocated during run time</li>
+</ul>
+</li>
+<li><strong>State</strong> (kernel space)</li>
+</ul>
+</li>
+<li>
+<p>An OS can make multiple processes run at the same time by <strong>time-sharing</strong> a processor and <strong>space-sharing</strong> main memory</p>
+</li>
+<li>
+<p>Process Creation</p>
+<ul>
+<li>
+<p>A process is identified and managed via a process identifier (pid)</p>
+</li>
+<li>
+<p>A parent process can <strong>spawn</strong> a child process to <strong>delegate</strong> a subtask</p>
+<ul>
+<li>A process can spawn multiple children proceses</li>
+<li>A parent process can run concurrently with its children processes</li>
+</ul>
+</li>
+<li>
+<p>init d, system d -&gt; usually pid = 1</p>
+<ul>
+<li>every processor is essentially a child of init d</li>
+<li>this is a <strong>good design</strong>
+<ul>
+<li>why?</li>
+<li>Parent process - Child process</li>
+<li>Caller function - Callee function</li>
+<li>
+<h2 id="multi-processing-is-basically-to-parallelize-the-task"><a class="header" href="#multi-processing-is-basically-to-parallelize-the-task">Multi-processing is basically to parallelize the task</a></h2>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../ITP30002-02/week1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../ITP40003-01/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../ITP30002-02/week1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../ITP40003-01/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

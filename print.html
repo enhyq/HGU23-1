@@ -1,0 +1,2401 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>HGU23-1</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="CCE33006-01/index.html"><strong aria-hidden="true">1.</strong> OpenAI and Art</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="CCE33006-01/week1.html"><strong aria-hidden="true">1.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="CCE33006-01/week2.html"><strong aria-hidden="true">1.2.</strong> Handong Universe</a></li></ol></li><li class="chapter-item expanded "><a href="ECE30007-01/index.html"><strong aria-hidden="true">2.</strong> AI프로젝트입문</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ECE30007-01/week1.html"><strong aria-hidden="true">2.1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ECE30007-01/hw1.html"><strong aria-hidden="true">2.1.1.</strong> HW1</a></li></ol></li><li class="chapter-item expanded "><a href="ECE30007-01/week2.html"><strong aria-hidden="true">2.2.</strong> Python Basics</a></li></ol></li><li class="chapter-item expanded "><a href="ECE30030-01/index.html"><strong aria-hidden="true">3.</strong> 데이타베이스</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ECE30030-01/week1.html"><strong aria-hidden="true">3.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="ECE30030-01/week2.html"><strong aria-hidden="true">3.2.</strong> Week 2</a></li><li class="chapter-item expanded "><a href="ECE30030-01/week3.html"><strong aria-hidden="true">3.3.</strong> Week 3</a></li></ol></li><li class="chapter-item expanded "><a href="GCS10011-01/index.html"><strong aria-hidden="true">4.</strong> 이공계 글쓰기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="GCS10011-01/week1.html"><strong aria-hidden="true">4.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="GCS10011-01/week2.html"><strong aria-hidden="true">4.2.</strong> Week 2</a></li></ol></li><li class="chapter-item expanded "><a href="GEK10082-03/index.html"><strong aria-hidden="true">5.</strong> 선형대수학</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="GEK10082-03/week1.html"><strong aria-hidden="true">5.1.</strong> Ch1 s1</a></li><li class="chapter-item expanded "><a href="GEK10082-03/week2.html"><strong aria-hidden="true">5.2.</strong> Ch1 s2-3</a></li></ol></li><li class="chapter-item expanded "><a href="ITP30002-02/index.html"><strong aria-hidden="true">6.</strong> Operating Systems</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ITP30002-02/week1.html"><strong aria-hidden="true">6.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="ITP30002-02/week2.html"><strong aria-hidden="true">6.2.</strong> Process</a></li></ol></li><li class="chapter-item expanded "><a href="ITP40003-01/index.html"><strong aria-hidden="true">7.</strong> Computer Graphics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ITP40003-01/week1.html"><strong aria-hidden="true">7.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="ITP40003-01/week2.html"><strong aria-hidden="true">7.2.</strong> Week 2</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="KAIST_CS492/index.html"><strong aria-hidden="true">8.</strong> Web3@KAIST</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="KAIST_CS492/week1.html"><strong aria-hidden="true">8.1.</strong> Empty</a></li><li class="chapter-item expanded "><a href="KAIST_CS492/week2.html"><strong aria-hidden="true">8.2.</strong> First Meeting</a></li></ol></li><li class="chapter-item expanded "><a href="GFS/index.html"><strong aria-hidden="true">9.</strong> GHOST Flutter Study</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="GFS/week1.html"><strong aria-hidden="true">9.1.</strong> Basic Widgets</a></li><li class="chapter-item expanded "><a href="GFS/week2.html"><strong aria-hidden="true">9.2.</strong> Widgets Continued</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="Notes/index.html">Notes</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">HGU23-1</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p><img src="img/23-03-13-10-27-23.png" alt="에타 시간표 updated" /></p>
+<p><img src="img/23-03-06-12-56-46.png" alt="에타 시간표" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="openai-and-art"><a class="header" href="#openai-and-art">OpenAI and Art</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-1"><a class="header" href="#introduction-1">Introduction</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="handong-universe"><a class="header" href="#handong-universe">Handong Universe</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-to-artificial-inteligence-project"><a class="header" href="#introduction-to-artificial-inteligence-project">Introduction to Artificial Inteligence Project</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-2"><a class="header" href="#introduction-2">Introduction</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hw1"><a class="header" href="#hw1">HW1</a></h1>
+<h2 id="investors-are-going-nuts-for-chatgpt-ish-artificial-intelligence"><a class="header" href="#investors-are-going-nuts-for-chatgpt-ish-artificial-intelligence">Investors are going nuts for ChatGPT-ish artificial intelligence</a></h2>
+<h3 id="출처-링크"><a class="header" href="#출처-링크">출처 링크:</a></h3>
+<ul>
+<li>https://www.economist.com/business/2023/02/28/investors-are-going-nuts-for-chatgpt-ish-artificial-intelligence</li>
+</ul>
+<h3 id="소스의-날짜"><a class="header" href="#소스의-날짜">소스의 날짜:</a></h3>
+<ul>
+<li>2023-02-28</li>
+</ul>
+<h3 id="간단한-요약"><a class="header" href="#간단한-요약">간단한 요약:</a></h3>
+<ul>
+<li>생성AI는 현재 세상의 많은 사람들과 특히 투자자들의 주목을 받고 있다</li>
+<li>500개 이상의 생성AI 스타트업이 생겨났다</li>
+<li>생성AI 분야에서 장기적으로 모든 것을 가져갈 승자는 누가 될지 확실하지 않다</li>
+<li>많은 스타트업들이 비슷하거나 더 나은 서비스를 제공하기도 하며 자원 소모가 심한 만큼 오픈소스 프로젝트에게 따라잡힐 수도 있다</li>
+<li>저작권 침해와 같은 법적인 문제가 언제든지 터질 수 있다</li>
+<li>OpenAI는 GPT-4의 출시를 준비중</li>
+<li>현 상황에서 가장 안전한 투자는 이러한 생성AI가 돌아가는데 필요한 프로세스 칩의 공급회사에 투자하는 것이다</li>
+<li>Cloud-computing services, data-center landlords, Nvidia같은 chip designer들은 앞으로 잘 될 수 밖에 없다</li>
+</ul>
+<h2 id="what-impact-will-artificial-intelligence-have-on-education"><a class="header" href="#what-impact-will-artificial-intelligence-have-on-education">What impact will artificial intelligence have on education?</a></h2>
+<h3 id="출처-링크-1"><a class="header" href="#출처-링크-1">출처 링크:</a></h3>
+<ul>
+<li>https://www.equaltimes.org/what-impact-will-artificial</li>
+</ul>
+<h3 id="소스의-날짜-1"><a class="header" href="#소스의-날짜-1">소스의 날짜:</a></h3>
+<ul>
+<li>2023-03-03</li>
+</ul>
+<h3 id="간단한-요약-1"><a class="header" href="#간단한-요약-1">간단한 요약:</a></h3>
+<ul>
+<li>요즘 AI가 생성하는 것들은 너무나 설득력이 있어 마치 AI가 사람과 같은 지능을 가지고 있고 이해하는 것 처럼 보이지만 절대 그렇지 않다</li>
+<li>최근 AI가 대중에게 공개되어 수십만명의 사람들과 상호작용하며 '학습'하고 있다</li>
+<li>ChatGPT가 생성하는 문장들은 참이든지 거짓이든지 말이 되는 것처럼 결과를 생성하기 때문에 잘못 되었다 - Noam Chomsky</li>
+<li>ChatGPT는 좋은 책으로 공부하는 것보다 더 낫지 않다 - José F. Morales</li>
+<li>ChatGPT가 위험한 것은 절반은 참인 말을 절반을 거짓인 말을 모두 동일하게 설득력 있게 제공한다는 것이다</li>
+<li>이해하지 못하고 말을 내뱉는 앵무새와 같이 단순한 &quot;창의적인 도구&quot;이다</li>
+<li>AI가 생성한 결과를 근거로 중요한 결정을 내리는 것은 위험하다</li>
+<li>AI가 하는건 감춰진 표절 &quot;cloaked plagiarism&quot; 이다</li>
+<li>Copy자체는 배우는 과정의 필수적인 요소이지만 어디서 가져왔는지 밝히지 않는 것은 잘못된 것이다</li>
+<li>아직까지는 책이 훨씬 더 신뢰할 수 있는 소스이다</li>
+<li>AI는 학습을 처음부터 다시 시작하지 않고서는 한번 배운 것을 잊어버릴 수 없기 때문에 현재 대중적인 AI를 학습 시키는 기업들이 가르치는 한정된 정보들이 &quot;valid and accurate knowledge&quot;로 인식되어질 수 있다는 점</li>
+<li>소셜 미디아에서 일어났던 것과 같은 실수를 반복하지 않으려면 개인이 원하는 정보로 training을 시킬 수 있을 때 까지 우리의 지식 관리를 AI에게 맡기면 안된다</li>
+<li>&quot;패닉할 필요는 없지만 변화 할 필요는 있다&quot; - Rose Luckin</li>
+<li>단순히 사실을 외우고 그것을 기억해 내고 재현하는 것을 가르치는 것은 학생들의 미래에 적합한 인재가 되도록 하는 것이 아니다. </li>
+<li>학생들이 스스로 &quot;learner&quot;으로 인식하도록 하고 어떤 정보가 어디에서 왔고 어떤 근거로 정보를 믿을지 잘 결정 할 수 있도록 가르쳐야 한다</li>
+<li>ChatGPT는 매우 빠르게 우리 삶의 일부로 자리 잡을 것이고 사람들은 그것을 잘 활용할 수 있도록 준비되어야 한다</li>
+<li>우리의 결정 권한을 AI에게 넘겨주는 것은 정말 위험하다</li>
+<li>아직 세상은 이 기술을 가지고 어떻게 뭘 해야 하는지 찾아가는 중이다</li>
+<li>이 기술은 이제 감추려고 해도 감춰지지 않을 것이다 (학교에서 밴 하려고 해도 막을 수 없다)</li>
+<li>21세기에 가져야 할 가장 중요한 능력 중 하나는 우리 주변의 모든 기술들과 함께 하면서도 안전하고, 책임감 있고, 건강하게 살아가는 것이다</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="python-basics"><a class="header" href="#python-basics">Python Basics</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="data-base"><a class="header" href="#data-base">Data-Base</a></h1>
+<p><img src="ECE30030-01/img/23-03-08-08-50-54.png" alt="강의 계획서" /></p>
+<ul>
+<li>중간고사 까지는 SQL 쿼리문만 잘 작성할 수 있으면 된다..?</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-3"><a class="header" href="#introduction-3">Introduction</a></h1>
+<h1 id="chapter-1---introduction"><a class="header" href="#chapter-1---introduction">Chapter 1 - Introduction</a></h1>
+<p>DBMS - Database-management system</p>
+<ul>
+<li>collection of interrelated data and a set of programs to access those data</li>
+<li>primary goal:
+<ul>
+<li>convenient and efficient way to store and retrieve db info</li>
+</ul>
+</li>
+</ul>
+<h2 id="database-system-applications"><a class="header" href="#database-system-applications">Database-System Applications</a></h2>
+<ul>
+<li>DB systems are used to manage collection of data that:
+<ul>
+<li>valuable</li>
+<li>large</li>
+<li>accessed my multiple users at the same time</li>
+</ul>
+</li>
+<li>Key to managing complexity is <strong>abstraction</strong>
+<ul>
+<li>users and application programmers does not need to know underlying details of how the data is actually stored </li>
+</ul>
+</li>
+<li>There are 2 modes in which DBs are used:
+<ol>
+<li>to support online transaction processing</li>
+<li>to support data analytics</li>
+</ol>
+</li>
+</ul>
+<h2 id="purpose-of-database-system"><a class="header" href="#purpose-of-database-system">Purpose of Database System</a></h2>
+<ul>
+<li>Major disadvantage of using typical file-processing system (suported by the OS)
+<ol>
+<li>Data redundancy and inconsistency</li>
+<li>Difficulty in accessing data</li>
+<li>Data isolation</li>
+<li>Integrity problems</li>
+<li>Atomicity problems</li>
+<li>Concurrent-access anomalies </li>
+<li>Security problems</li>
+</ol>
+</li>
+<li>DB systems offer solution for all these problems</li>
+</ul>
+<h2 id="view-of-data"><a class="header" href="#view-of-data">View of Data</a></h2>
+<ul>
+<li>
+<p>What is DB</p>
+<ul>
+<li>&quot;A collection of interrelated data and a set of progrmas that allows users to access and modify these data&quot;</li>
+<li>provides abstract view of the data</li>
+</ul>
+</li>
+<li>
+<p>4 Categories of Data Models</p>
+<ol>
+<li>Relational Model</li>
+<li>Entity-Relationship Model</li>
+<li>Semi-structured Data Model</li>
+<li>Object-Based Data Model</li>
+</ol>
+</li>
+</ul>
+<h2 id="data-abstraction"><a class="header" href="#data-abstraction">Data Abstraction</a></h2>
+<ol>
+<li>Physical level
+<ul>
+<li>lowest level of abstraction</li>
+<li>describes <em>how</em> the data are actually stored</li>
+</ul>
+</li>
+<li>Logical level
+<ul>
+<li>describes <em>what</em> data are stored</li>
+<li>relationships among those data</li>
+<li>describe the entire DB in terms of a small number of relatively simple structures
+<ul>
+<li>does not need to know the complex physical-level structures -&gt; <strong>physical data independence</strong></li>
+</ul>
+</li>
+<li>each record is described by a type definition
+<ul>
+<li>interrelationship of these record types is also defined at this level</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>View level
+<ul>
+<li>describes only part of the entire DB
+<ul>
+<li>hides logical level details</li>
+<li>security -&gt; only allows access to certain parts</li>
+</ul>
+</li>
+<li>simplifies interactoin with the system</li>
+<li>several views are defiend</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>
+<p>DB programmers != DB Administrators</p>
+<ul>
+<li>DB Admins may be aware of certain details of the physical organization of the data</li>
+<li>DB use data structure called an <em>index</em> to support efficient retrieval of records</li>
+</ul>
+</li>
+<li>
+<p>These abstractions not only hide low level implementations from the users, but also the application program developers</p>
+</li>
+<li>
+<p><strong>instance</strong>: The collection of information stored in the DB at a particular moment</p>
+</li>
+<li>
+<p><strong>schema</strong>: The overall design of the DB</p>
+</li>
+<li>
+<p>DB systems have several schemas for each level of abstraction</p>
+<ul>
+<li>Physical schema
+<ul>
+<li>describes the DB design at the physical level</li>
+<li>can be changed without affecting application program</li>
+</ul>
+</li>
+<li>Logical schema</li>
+<li>View schema (aka subschemas)</li>
+</ul>
+</li>
+<li>
+<p>Good and bad schema designs ? (ch 7)</p>
+</li>
+</ul>
+<h2 id="database-languages"><a class="header" href="#database-languages">Database Languages</a></h2>
+<ul>
+<li>
+<p><strong>DDL</strong>(data-definition language)</p>
+<ul>
+<li>specify the DB schema</li>
+<li>special type of DDL -&gt; data storage and definition language
+<ul>
+<li>used to specify the storage sturcture and access methods</li>
+</ul>
+</li>
+<li>DDL provides facilities to specify constraints
+<ul>
+<li>Domain Constraints
+<ul>
+<li>domain of possible values</li>
+</ul>
+</li>
+<li>Referential Integrity</li>
+<li>Authorization
+<ul>
+<li>read, insert, update, delete</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DDL -&gt; output
+<ul>
+<li>&quot;The output of the DDL is placed in the <strong>data dictionary</strong>, which contains metadata - that is data about data&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>DML</strong>(data-manipulation language)</p>
+<ul>
+<li>express DB quereis and updates</li>
+<li>2 types:
+<ol>
+<li>Procedural DMLs</li>
+<li>Declarative DMLs (nonprocedural DMLs)</li>
+</ol>
+</li>
+<li><strong>query</strong> is a statement requesting the retrieval of information</li>
+</ul>
+</li>
+<li>
+<p>SQL language -&gt; nonprocedural (Declarative)</p>
+<ul>
+<li>a query takes as input several tables and always returns a single table</li>
+</ul>
+</li>
+<li>
+<p>ODBC (Open Database Connectivity)</p>
+<ul>
+<li>defines appolication program interfaces for use with several programming language</li>
+<li>JDBC (Java Database Connectivity)</li>
+</ul>
+</li>
+</ul>
+<h2 id="database-design"><a class="header" href="#database-design">Database Design</a></h2>
+<ol>
+<li>Initial Phase
+<ul>
+<li>characterize fuly the data needs of the prospective DB users</li>
+</ul>
+</li>
+<li>Conceptual-design phase
+<ul>
+<li>choosese a data model and translates into a conceptual shcema of the DB</li>
+</ul>
+</li>
+<li>Logical design phase
+<ul>
+<li>moving from the abstract data model to the implementation of the DB</li>
+</ul>
+</li>
+<li>Physical design phase
+<ul>
+<li>physical features of the db are specified</li>
+<li>for of file organization and the internal storage structure</li>
+</ul>
+</li>
+</ol>
+<h2 id="db-engine"><a class="header" href="#db-engine">DB Engine</a></h2>
+<ul>
+<li>The functional components of a db system can be broadly divided into:
+<ol>
+<li>storage manager 
+<ul>
+<li>manage how information stored on disks as low-level data 
+<ul>
+<li>how they move between disk storage and main memory</li>
+</ul>
+</li>
+<li>use the file system to store data</li>
+<li>translates DML statements into low-level file-system commands</li>
+<li>Components
+<ul>
+<li>Authorization and integrity manager</li>
+<li>Transaction manager <strong>?</strong></li>
+<li>File manager</li>
+<li>Buffer manager</li>
+</ul>
+</li>
+<li>Data structures it implements
+<ul>
+<li>Data files</li>
+<li>Data dictionary</li>
+<li>Indicies</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>query processor
+<ul>
+<li>translates query language from logical level to sequence of operations at the physical level</li>
+<li>components
+<ul>
+<li>DDL interpreter</li>
+<li>DML compiler
+<ul>
+<li>performs query optimization</li>
+</ul>
+</li>
+<li>Query evaluation engine</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>transaction management
+<ul>
+<li>treat a sequence of db accesses <strong>atomically</strong>
+<ul>
+<li>happen in its entirety or not at all</li>
+<li>all-or-none requirement -&gt; <strong>atomicity</strong></li>
+</ul>
+</li>
+<li>correctness requirement -&gt; <strong>consistency</strong></li>
+<li>persistence requirement -&gt; <strong>durability</strong></li>
+<li>allows devs to think at a higher level</li>
+<li>transaction -&gt; a collection of operations that performs a single logical function in a db application
+<ul>
+<li>each transaction is a unhit of both atomicity and consistency</li>
+</ul>
+</li>
+<li>components
+<ul>
+<li>recovery manager</li>
+<li>concurrency-control manager</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="database-and-application-architecture"><a class="header" href="#database-and-application-architecture">Database and Application Architecture</a></h2>
+<p><img src="ECE30030-01/img/23-03-08-12-24-49.png" alt="System structure" /></p>
+<h3 id="two-teir-and-three-tier-architecture"><a class="header" href="#two-teir-and-three-tier-architecture">two-teir and three-tier architecture</a></h3>
+<p><img src="ECE30030-01/img/23-03-08-12-34-31.png" alt="Two-teir and Three-teir architecture" /></p>
+<ul>
+<li>Rather than distributing the business logic of the application to all clients, it is better to embed in the application server only.</li>
+<li>three-teir architecuter provides better security as well as performance</li>
+</ul>
+<h2 id="history-of-db-systems"><a class="header" href="#history-of-db-systems">History of DB systems</a></h2>
+<ul>
+<li>1950s
+<ul>
+<li>magnetic tapes</li>
+<li>data could be only read <strong>sequentially</strong></li>
+</ul>
+</li>
+<li>1960s
+<ul>
+<li>hard disks cam out</li>
+<li>allowed direct access to data -&gt; free from sequentiality</li>
+</ul>
+</li>
+<li>1970s~1980s
+<ul>
+<li>Initially existing network and hierarchial DB was much better</li>
+<li>System R -&gt; efficient relational DB system
+<ul>
+<li>Soon Ingres, Oracle, DB2, etc... came out </li>
+</ul>
+</li>
+<li>In 1980s relational model almost replaced the existing network and heirarchial DB model</li>
+</ul>
+</li>
+<li>1990s
+<ul>
+<li>SQL language was designed -&gt; to support query intensive applications</li>
+<li>until 1980s, applications were mostly update-intensive</li>
+<li>WWW came out</li>
+</ul>
+</li>
+<li>2000s
+<ul>
+<li>semi-structured data
+<ul>
+<li>XML, JSON</li>
+</ul>
+</li>
+<li>added support for spatial data (location)</li>
+<li>social network -&gt; graph DB</li>
+<li>need for rapid development -&gt; NoSQL systems</li>
+</ul>
+</li>
+<li>2010s
+<ul>
+<li>NoSQL systems evolved to provide features to support stricter notions of consistency</li>
+<li>Enterprise started outsorcing data storage and management</li>
+<li>cloud services</li>
+<li>&quot;software as a service&quot;</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="week-2"><a class="header" href="#week-2">Week 2</a></h1>
+<h2 id="relation-algebra"><a class="header" href="#relation-algebra">Relation Algebra</a></h2>
+<ul>
+<li>
+<p>Select σ</p>
+</li>
+<li>
+<p>Project Π</p>
+</li>
+<li>
+<p>Cartesian product ⨉</p>
+</li>
+<li>
+<p>Join ⋈</p>
+</li>
+<li>
+<p>Rename ρ</p>
+</li>
+<li>
+<p>Union ⋃</p>
+</li>
+<li>
+<p>Set-intersection ⋂</p>
+</li>
+<li>
+<p>Set-difference −</p>
+</li>
+<li>
+<p>Operands: variables or values from which new values can be constructed</p>
+</li>
+<li>
+<p>Operators: symbols denoting procedures that construct new values from given operands</p>
+</li>
+<li>
+<p>What is relation algebra?</p>
+<ul>
+<li>A procedural language consisting of a set of operations that take 1 or 2 relations as input and produce a new relation as their output</li>
+</ul>
+</li>
+</ul>
+<h3 id="select-operation"><a class="header" href="#select-operation">Select Operation</a></h3>
+<ul>
+<li>The select operation selects tuples that satisfy a given predicate</li>
+<li>Notation: $\sigma_{\rho}(r)$
+<ul>
+<li>is called the selection predicate</li>
+</ul>
+</li>
+<li>Example:
+<ul>
+<li>&quot;select those tuples of the instructor relation where the instructor is in the <em>Comp. Sci</em> department&quot;
+<ul>
+<li>Query: $\sigma_{dept_name=&quot;Comp. Sci.&quot;}(instructor)$</li>
+</ul>
+</li>
+<li>Comparison using $=, \ne, &gt;, \ge, &lt;, \le $ are allowed in the selection predicates</li>
+<li>Combine several predicates into a larger predicate by using the connectives: $\land$(and), $\lor$(or), $\lnot$(not)</li>
+</ul>
+</li>
+</ul>
+<h2 id="project-operation"><a class="header" href="#project-operation">Project Operation</a></h2>
+<ul>
+<li>A <em>unary</em> operation that returns its argument relation, with certain attributes left out</li>
+<li>Notation $\Pi_{A_1,A_2,A_3,...,A_k}(r)$
+<ul>
+<li>$A_1,A_2,A_3,...,A_k$ are attribute names and $r$ is a relation name</li>
+</ul>
+</li>
+<li>The result is defined as a relation with k columns
+<ul>
+<li>Columns that are not listed among $A_1,A_2,A_3,...,A_k$ are also removed in the result</li>
+<li><strong>Duplicate rows are removed</strong> from the result (because the resulting relations are sets)</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li>&quot;Show only the <em>name</em> and <em>salary</em> of instructor&quot;</li>
+<li>Query
+<ul>
+<li>$\Pi_{name, salary}(instructor)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="compositoin-of-relational-operations"><a class="header" href="#compositoin-of-relational-operations">Compositoin of relational operations</a></h2>
+<ul>
+<li>relational-algebra operations can be composed together into relational-algebra expression
+<ul>
+<li>recall that the result of a relational-algebra is a relation</li>
+<li>Instead of giving the name of a relation as the argument of the projection operation, one can give an expression that evaluates to a relation</li>
+</ul>
+</li>
+<li>Consider the query
+<ul>
+<li>&quot;Find the names of all instructors in the Comp. Sci. deparment&quot;</li>
+<li>Query
+<ul>
+<li>$\Pi_{name}\Bigl( \sigma_{dept_name=&quot;Comp. Sci.&quot;}(instructor)\Bigr)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="cartesian-product-operation"><a class="header" href="#cartesian-product-operation">Cartesian-Product Operation</a></h2>
+<ul>
+<li>The Cartesian-product operation (denoted by $\times$) combines information from any 2 relations
+<ul>
+<li>Construct a relation of the result out of each possible pair of tuples</li>
+<li>Binary operator</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li>&quot;The Cartesian product of the relations <em>instructor</em> and <em>teaches</em>&quot;</li>
+<li>Query
+<ul>
+<li>$instructor \times teaches$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The Cartesian-Product associates every tuple of <em>instructor</em> with every tuple of <em>teaches</em>
+<ul>
+<li>most of the resulting rows have information not very meaningful</li>
+<li>Example
+<ul>
+<li>&quot;Get only those tuples of <em>instructor $\times$ teaches</em> that pertain to the courses that the instructor taught&quot;</li>
+<li>Query
+<ul>
+<li>$\sigma_{instructor.id=teaches.id}(instructor \times teaches)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="join-operation"><a class="header" href="#join-operation">Join Operation</a></h2>
+<ul>
+<li>
+<p>The join operation combines a <strong>select</strong> operaiton and a <strong>Cartesian-Product</strong> operation into a single operation</p>
+<ul>
+<li>Consider relations $r(R)$ and $s(S)$
+<ul>
+<li>Let $\theta$ be a predicate on attributes in the schema $R \cup S$</li>
+<li>The join operation $r \bowtie_{\theta}s$ is defined as follows:
+<ul>
+<li>$r\bowtie_{\theta}s = \sigma_{\theta}(r\times s)$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li>$\sigma_{instructor.id=teaches.id}(instructor\times teaches)$ is equivalent to $instructor\bowtie_{instructor.id=teaches.id}teaches$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>나중에 SQL을 사용하면 아래와 같이 다양한 JOIN operation을 배우게 될 것이다</p>
+<ul>
+<li>INNER JOIN</li>
+<li>LEFT JOIN</li>
+<li>RIGHT JOIN</li>
+<li>OUTER JOIN</li>
+</ul>
+</li>
+</ul>
+<h2 id="union-operation"><a class="header" href="#union-operation">Union Operation</a></h2>
+<ul>
+<li>The union operation combines 2 relations as a superset of both
+<ul>
+<li>Notation: $r\cup s$</li>
+</ul>
+</li>
+<li>For $r\cup s$ to be valid,
+<ol>
+<li>$r, s$ must have the same number of attributes (same <strong>arity</strong>)</li>
+<li>The attribute domains must be compatible</li>
+</ol>
+</li>
+<li>Example
+<ul>
+<li>&quot;Find all coursese taught in the Fall 2017 semester, or in the Spring 2018 semester, or both&quot;</li>
+<li>Query
+<ul>
+<li>$\Pi_{corse_id}\Bigl(\sigma_{semester=&quot;Fall&quot;\land year=2017}(teaches)\Bigr) \cup \\Pi_{corse_id}\Bigl(\sigma_{semester=&quot;Spring&quot;\land year=2018}(teaches)\Bigr)
+$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Duplicates are removed!</strong></li>
+</ul>
+<h2 id="set-intersection-operation"><a class="header" href="#set-intersection-operation">Set-Intersection Operation</a></h2>
+<ul>
+<li>The set-intersection operation finds tupes that are in both the input relations
+<ul>
+<li>Notation: $r\cap s$</li>
+<li>Assumptions:
+<ul>
+<li>$r, s$ have the same <strong>arity</strong></li>
+<li>Attributes of $r$ and $s$ are <strong>compatible</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li>&quot;Find the set of all courses taught in both the 2017-Fall and 2018-Spring semesters&quot;</li>
+<li>Query
+<ul>
+<li>$\Pi_{course_id}\Bigl(\sigma_{semester=&quot;Fall&quot;, \land , year=2017}(section)\Bigr)\cap \ \Pi_{course_id}\Bigl(\sigma_{semester=&quot;Spring&quot;, \land , year=2017}(section)\Bigr)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="set-difference-operation"><a class="header" href="#set-difference-operation">Set-Difference Operation</a></h2>
+<ul>
+<li>The set-difference operation finds tuples that are in one relation but are not in another
+<ul>
+<li>Notation: $r-s$</li>
+<li>Assumptions
+<ul>
+<li>same arity</li>
+<li>compatibility</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-assignment-operation"><a class="header" href="#the-assignment-operation">The Assignment Operation</a></h2>
+<ul>
+<li>It is convenient at times to write a relational-algebra expression by assigning parts of it to temporary relation variables
+<ul>
+<li>Notation: $\leftarrow$</li>
+<li>An assignment works like the assignments in a programming language</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li>Find all instructor in the Physics and Music departments</li>
+<li>Query
+<ul>
+<li>$Physics \leftarrow \sigma_{dept_name=&quot;Physics&quot;(instructor)}$
+$Music \leftarrow \sigma_{dept_name=&quot;Music&quot;(instructor)}$
+$Physics \cup Music$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>프로그램 코드와 같이 위에서 아래로 읽는다 -&gt; sequential code를 짤 수 있다</li>
+<li>With the assignment operation, a query can be written as a sequential program
+<ul>
+<li>A sequential program consists of a series of assignments followed by an expression whose value is displayed as the result of the query</li>
+</ul>
+</li>
+</ul>
+<h2 id="rename-operation"><a class="header" href="#rename-operation">Rename Operation</a></h2>
+<ul>
+<li>The results of relational-algebra expressions do not have a name that one can use to refer to them</li>
+<li>The rename operator, $\rho$, sets names to relational-algebra expressions
+<ul>
+<li>Notation: $\rho_x(E)$</li>
+<li>Returns the result of expression $E$ under the name $x$</li>
+</ul>
+</li>
+<li>$E$ can be specific attribute of a relation</li>
+</ul>
+<h2 id="equivalent-queries"><a class="header" href="#equivalent-queries">Equivalent Queries</a></h2>
+<ul>
+<li>
+<p>There is more than one way to write a query in relational algebra</p>
+</li>
+<li>
+<p>Example</p>
+<ul>
+<li>&quot;Find information about courses taught by instructors in the Comp. Sci. department with salary greater than 50,000&quot;</li>
+<li>Query 1
+<ul>
+<li>$\sigma_{dept_name=&quot;Comp.Sci&quot;, \land , salary&gt;50,000}(instructor)$</li>
+<li>$\sigma_{dept_name=&quot;Comp.Sci&quot;}\Bigl( \sigma_{salary&gt;50,000}(instructor)\Bigr)$</li>
+<li>\( \sigma_{salary&gt;50,000}\Bigl( \sigma_{dept_name=&quot;Comp.Sci&quot;}(instructor)\Bigr) \)</li>
+</ul>
+</li>
+<li>The 3 queries are <strong>not identical</strong>; they are, however, <strong>equivalent</strong> -- they give the same result on <strong>any</strong> database</li>
+</ul>
+</li>
+<li>
+<p>쿼리를 어떻게 짜느냐에 따라서 실행 속도가 달라진다</p>
+<ul>
+<li>예를들어 위에 예시에서 1번보다 2번이 더 빠를 것을 예상할 수 있다. 더 적은 comparison을 사용하기 때문에</li>
+<li>요즘 DBMS는 SQL 쿼리를 받은 그대로 실행하지 않고 <strong>Query Optimization</strong>을 한다</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>프로젝트 할 때 Query Optimization이 필요할 수 있다</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="week-3"><a class="header" href="#week-3">Week 3</a></h1>
+<h2 id="mysql"><a class="header" href="#mysql">MySQL</a></h2>
+<ul>
+<li>
+<p>An SQL-based R-DBMS (relational database management system)</p>
+</li>
+<li>
+<p>Free and open-source R-DBMS (under GPL)</p>
+<ul>
+<li>Owned by Oracle</li>
+<li>Commercial version of MySQL is also provided (including technical support)</li>
+<li>&quot;My&quot; came from the name of co-founder Michael Widenius' daughter
+<ul>
+<li>C.f, MariaDB</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Compatible with standard SQL (almost)</p>
+</li>
+<li>
+<p>Frequently used for commercial web services</p>
+<ul>
+<li>Enlyft라는 회사가 주기적으로 MySQL 사용량 데이터를 분석한다</li>
+</ul>
+</li>
+<li>
+<p>MySQL은 시작할 때 돈은 안들지만 유지보수나 문제가 생겼을 때 많이 손해/비용이 발생한다</p>
+</li>
+<li>
+<p>Why MySQL?</p>
+<ul>
+<li>Popular
+<ul>
+<li>Active discussions all over the Internet</li>
+</ul>
+</li>
+<li>Versatile: runs on Linux, Windows, Mac OS X, Solaris, FreeBSD, ...
+<ul>
+<li>FreeBSD -&gt; -&gt; MacOS</li>
+<li>Supports wide range of programming languages (C/C++, Java, Python, .Net, ...)
+<ul>
+<li>Connector가 존재한다</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cost starts from 0
+<ul>
+<li>하지만 이후 유지보수 비용, 시작 비용, 관리 비용도 생각해야 한다</li>
+</ul>
+</li>
+<li>High performance (fast and reliable)</li>
+</ul>
+</li>
+<li>
+<p>다양한 DBMS</p>
+<ul>
+<li>Disk | File System | Database System
+<ul>
+<li>Disk는 느리다..</li>
+<li>DB 전체를 Memory에 올리면 안되나?
+<ul>
+<li>-&gt; In-memory DB</li>
+<li>access가 많고 적은 양의 데이타</li>
+<li><strong>Redis</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Elasticsearch</strong>
+<ul>
+<li>Reverse Index를 만들어 준다</li>
+<li>Google과 같은 검색엔진을 만들기 쉽다</li>
+<li>조직 내에서 검색엔진을 만들어야 할 때</li>
+</ul>
+</li>
+<li><strong>SQLite</strong>
+<ul>
+<li>DB끼리 데이터를 옮기려면 DBMS에서 제공하는 interface를 사용해야만 한다</li>
+<li>그냥 복사-&gt;붙여넣기 한다고 해서 DBMS가 인식하지 않는다</li>
+<li>하지만 SQLite는 복사 붙여넣기 해도 된다</li>
+<li>File-based</li>
+</ul>
+</li>
+<li><strong>Microsoft Azure SQL Database</strong>
+<ul>
+<li>MSSQL on <strong>Cloud</strong></li>
+</ul>
+</li>
+<li><strong>Snowflake</strong>
+<ul>
+<li>Data warehouse를 구축할 수 있게 도와줌</li>
+<li>분석을 목적으로 한다 (Analysis)
+<ul>
+<li>Analytic &lt;-&gt; Transactional</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>MySQL</p>
+<ul>
+<li>Massive: Can handle TB of data</li>
+<li>Convenient: Supports high-level query language</li>
+<li>Multi-user: Supports concurrent data access</li>
+<li>Safe: Supports <em>transaction</em>
+<ul>
+<li>In R-DB, transaction is the <em>unit</em> of operation/task
+<ul>
+<li><em>atomicity</em></li>
+<li>eg. (1)돈을 빼고 (2)이동하고 (3)돈을 더하고
+<ul>
+<li>1,2,3 전부 다 실행이 되거나</li>
+<li>전부 실행이 안되거나 해야한다</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Efficient: Can handle thousands of queries/second
+<ul>
+<li>TPS -&gt; transactions per second</li>
+<li>R-DBMS에서는 성능이 상당히 중요하다</li>
+</ul>
+</li>
+<li>Reliable: 99.99% up-time in many real-world products
+<ul>
+<li>Question: Up-time을 유지하기 위해서는 어떤 문제들이 존재하고 이를 해결하기 위해서는 어떤 기술들이 필요한가?
+<ul>
+<li>문제: 버그 생겨서 crash</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>MySQL Versions</p>
+<ul>
+<li><strong>Version 5.x</strong> vs <strong>Version 8.0</strong></li>
+</ul>
+<ol>
+<li>5.x
+<ul>
+<li>Most popular version of MySQL</li>
+<li>More stable and conventional</li>
+<li>5.x 버전일 때 Oracle이 인수했다</li>
+</ul>
+</li>
+<li>8.0
+<ul>
+<li>Current version </li>
+<li>Provides up-to-date DB functionalities
+<ul>
+<li>better storage engine, faster, more secure</li>
+</ul>
+</li>
+<li>아직까지는 5.x 버전을 사용하고 있다</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><strong>Upgrading a DBMS is NOT easy</strong>
+<ul>
+<li>업그레이드 과정에서 데이터 손실은 매우 흔한 문제이다
+<ul>
+<li>why???</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Where to get MySQL?</p>
+<ul>
+<li>
+<p><a href="https://dev.mysql.com/downloads/">Community Version</a></p>
+</li>
+<li>
+<p>DBMS는 기본적으로 상시 작동한다</p>
+</li>
+<li>
+<p>우리 수업에서는 Docker를 사용해서 DBMS를 실행 할 것이다</p>
+</li>
+<li>
+<p>We have prepared a Docker image for the course</p>
+<ul>
+<li>Consists of ubuntu Server, MySQL, example databases for course activities</li>
+</ul>
+</li>
+<li>
+<p>DB Client Software</p>
+</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="engineering-writing---이공계-글쓰기"><a class="header" href="#engineering-writing---이공계-글쓰기">Engineering Writing - 이공계 글쓰기</a></h1>
+<h2 id="강의-계획서"><a class="header" href="#강의-계획서">강의 계획서</a></h2>
+<p><img src="GCS10011-01/img/23-03-07-08-10-22.png" alt="" /></p>
+<h2 id="관련-사이트-모음"><a class="header" href="#관련-사이트-모음">관련 사이트 모음</a></h2>
+<ul>
+<li><a href="https://owl.snu.ac.kr/%EB%B9%84%ED%8F%89%EC%A0%81-%EA%B8%80%EC%93%B0%EA%B8%B0/">온라인 글쓰기 교실 - 비평적 글쓰기</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-4"><a class="header" href="#introduction-4">Introduction</a></h1>
+<p>글쓰기가 필요한 이유</p>
+<ul>
+<li>논문 써야됨, 소통 해야됨, 많은 엔지니어와 비즈니스 사람들이 정말 필요한 기술이라고 설문</li>
+</ul>
+<p>이공계서 접하는 글의 종류</p>
+<ul>
+<li>논문, 발표 대본, 실험 보고서, 강의 노트, </li>
+</ul>
+<p>글쓰기가 어려운 이유 / 어려운 점</p>
+<ul>
+<li>많이 안써봐서, 시작 문구 작성하기, 등등</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="week-2-1"><a class="header" href="#week-2-1">Week 2</a></h1>
+<p>비평문 6팀:</p>
+<ul>
+<li>권은혁(21900050)</li>
+<li>최예라(22200750)</li>
+</ul>
+<h2 id="비평문"><a class="header" href="#비평문">비평문?</a></h2>
+<ul>
+<li>평가하는 글</li>
+</ul>
+<h2 id="과학-비평문-scientific-critique"><a class="header" href="#과학-비평문-scientific-critique">과학 비평문 (Scientific Critique)</a></h2>
+<ul>
+<li>평론 -&gt; 평가 대상의 가치를 매김</li>
+<li>본인의 시각에서 객관적으로 평가 (evaluate)
+<ul>
+<li>Q 본인의 시각이면서 객관적이다.. ?</li>
+</ul>
+</li>
+<li>궁극적 목표
+<ul>
+<li>현재의 지식체계와 사회를 발전시키는 기여도를 기준으로 평가</li>
+<li>쉽게 써서 대중들에게 효과적으로 전달</li>
+</ul>
+</li>
+</ul>
+<h2 id="과학-비평문의-종류"><a class="header" href="#과학-비평문의-종류">과학 비평문의 종류</a></h2>
+<ul>
+<li>수필적
+<ul>
+<li>전체 내용 보다는 1,2가지 중점되는 소재나 주제</li>
+<li>자유롭다 -&gt; 주관적 견해 포함</li>
+<li>대중에게 전달 목적</li>
+</ul>
+</li>
+<li>논증적
+<ul>
+<li>전체적으로 분석함으로 가치나 한계를 종합적으로 지적</li>
+<li>논거를 제시해 가면서</li>
+<li>'머리말-본문-맺음말'의 형태</li>
+<li>객관성 확보</li>
+</ul>
+</li>
+</ul>
+<h2 id="준비"><a class="header" href="#준비">준비</a></h2>
+<ol>
+<li>&quot;비평하고자 하는 과학 분야의 정보를 가능한 많이 수집&quot;</li>
+<li>&quot;비평을 할 과학적 대상이 주어지면, 먼저 그 대상을 자세히 분석하여 무엇이 중요하나지를 파악하고, 그 가운데 구체적으로 어떤 것을 비평 대상으로 삼을 것인지를 정해야 한다&quot;</li>
+<li>&quot;수강을 하고 있는 특정 교과목에서 비평과제를 부여하면서그에 대한 비평 지침을 미리 알려 주는 경우에는 이 비평 지침을 염두에 두고 비평 대상물을 분석해야 한다&quot;</li>
+<li>&quot;비평 대상이 되는 책이나 자료를 읽을 때는 적절하게 메모를 하는 것이 필요하다&quot;</li>
+</ol>
+<h2 id="과정"><a class="header" href="#과정">과정</a></h2>
+<ol>
+<li>&quot;창조적이고 비판적으로 자료를 읽고 분석하기&quot;
+<ul>
+<li>핵심적인 주장 찾기</li>
+<li>뒷받침 하는 증거의 설득력</li>
+<li>내용 연결성</li>
+<li>오류</li>
+<li>육하원칙 질문하면서 분석 (Who, When, Where, What, hoW, Why)</li>
+</ul>
+</li>
+<li>&quot;필자가 주장하는 바를 뒷받침하는 데이터나 사실을 확인해 보기&quot;</li>
+<li>&quot;데이터와 자료의 내용을 요약하고 메모하기&quot;</li>
+<li>&quot;비평 대상의 가치를 평가하기&quot;
+<ul>
+<li>이론적이고 객관적인 자료에 근거해서 가치가 있는지 없는지 평가</li>
+<li>Q: 어떤 가치? 어떤 관점으로서의 가치를 말하는 것인가?</li>
+</ul>
+</li>
+<li>&quot;비평문을 작성하기 위한 기획서 만들기&quot;
+<ul>
+<li>~설계도</li>
+<li>기획서에 들어갈 요소들:
+<ul>
+<li>&quot;비평문을 쓰기 위한 대상 선정&quot;</li>
+<li>&quot;비평문의 주제 및 개요 작성&quot;</li>
+<li>&quot;비평문 쓰기를 위한 자료의 수집&quot;</li>
+<li>&quot;자료의 분석 및 비평&quot;</li>
+<li>&quot;비평문의 프레임(frame) 만들기&quot;
+<ul>
+<li>논리 개요도
+<ul>
+<li>서론-본론-결론</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>초안(first draft) 쓰기</li>
+<li>교정하기
+<ul>
+<li>내용면에서의 교정</li>
+<li>구성면에서의 교정</li>
+<li>표현면에서의 교정</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="비평문의-일반적-형식과-내용"><a class="header" href="#비평문의-일반적-형식과-내용">비평문의 일반적 형식과 내용</a></h2>
+<h3 id="들머리-introduction"><a class="header" href="#들머리-introduction">들머리 (Introduction)</a></h3>
+<h3 id="본문-main-body"><a class="header" href="#본문-main-body">본문 (Main body)</a></h3>
+<h3 id="마무리-conclusion"><a class="header" href="#마무리-conclusion">마무리 (Conclusion)</a></h3>
+<h2 id="37-tue"><a class="header" href="#37-tue">3/7 (Tue)</a></h2>
+<p><img src="GCS10011-01/img/23-03-10-16-17-26.png" alt="Lecture Note" /></p>
+<ul>
+<li>
+<p>글쓰기 배우기 가장 좋은 방법은 -&gt; 1:1 첨삭</p>
+</li>
+<li>
+<p>쓰기의 개념과 범위</p>
+<ul>
+<li>문자 언어의 특성 (음성 언어와의 차이)
+<ul>
+<li>영구성, 산출시간, 거리, 철자, 복잡성, 어휘, 형식성</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>쓰기의 범위</p>
+<ul>
+<li>잘하기 위해 필요한 능력
+<ul>
+<li>쓰기 지식: 언어, 주제, 독자 (AppleBee)</li>
+<li>Canale: 문법, 사회언어학 (사회적 위치), 담화적, 전략적 (이어나가는 전략)</li>
+<li>Tribble: 내용, 맥학, 언어 구조, 쓰기 과정</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>좋은 글이란</p>
+<ul>
+<li>진실성, 독창성, 명확성</li>
+</ul>
+</li>
+<li>
+<p><strong>자기 표절</strong> (self-plagiarism) by ChatGPT</p>
+<ul>
+<li>이미 출판된 자신의 논문이나 연구 보고서 등에서 발표한 내용을 다시 사용하는 것</li>
+<li>동일한 내용을 2번 이상 사용하여 출판하거나 발표하는 것</li>
+<li>학술 연구에서는 용인되지 않는다
+<ul>
+<li>중복 발표하여 독자나 평가자를 속이는 것으로 간주</li>
+<li>연구의 발전을 방해 (?)</li>
+</ul>
+</li>
+<li>사용하기 위해서는 출처를 명확하게 밝혀야 함</li>
+</ul>
+</li>
+</ul>
+<h2 id="질문"><a class="header" href="#질문">질문</a></h2>
+<ul>
+<li>비평문을 비평 (?)</li>
+</ul>
+<h2 id="310-fri"><a class="header" href="#310-fri">3/10 (Fri)</a></h2>
+<p><img src="GCS10011-01/img/23-03-10-14-35-33.png" alt="Lecture Note" /></p>
+<h3 id="lecture-note-요약"><a class="header" href="#lecture-note-요약">Lecture Note 요약</a></h3>
+<ul>
+<li>
+<p>화제 vs 주제</p>
+<ul>
+<li>화제 -&gt; 이야기 거리</li>
+<li>주제 -&gt; 글을 쓰는 사람이 말하고 싶은 바</li>
+<li>Example
+<ul>
+<li>&quot;비혼모&quot; = 화제</li>
+<li>&quot;비혼모는 좋다&quot; = 주제</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>문단을 구분하는 이유</p>
+<ul>
+<li>문단마다 하고 싶은 이야기 한개 -&gt; 소주제</li>
+<li>너무 길면 안좋다</li>
+</ul>
+</li>
+<li>
+<p>비평적 글쓰기</p>
+<ul>
+<li>문제 분석 -&gt; 해결 방식 제안하는 식으로 쓸 수도 있다</li>
+</ul>
+</li>
+<li>
+<p>서론과 제목은 마지막에 쓰는 것이 좋다</p>
+</li>
+<li>
+<p>논리 개요도</p>
+<ul>
+<li>서론</li>
+<li>본론</li>
+<li>결론</li>
+</ul>
+</li>
+<li>
+<p>강의 책의 Chapter 15읽어보기</p>
+</li>
+</ul>
+<h3 id="chapter-15---과학-에세이-쓰기-전략"><a class="header" href="#chapter-15---과학-에세이-쓰기-전략">Chapter 15 - 과학 에세이 쓰기 전략</a></h3>
+<ul>
+<li>
+<p>과학 에세이 (Scientific essay) = 과학적 내용을 에세이 형식으로 쓴 글</p>
+</li>
+<li>
+<p>과학적 사실을 대중에게 알리고 공감대를 형성하는 목적</p>
+</li>
+<li>
+<p>주제 정하기</p>
+<ul>
+<li>가치의 문제
+<ul>
+<li>독자의 흥미</li>
+<li>사회발전에 도움이 될 만한 것</li>
+</ul>
+</li>
+<li>내용의 문제
+<ul>
+<li>주제에 대해 새롭고 분명한 식견을 가지기</li>
+<li>정확하고 새로운 자료</li>
+<li>창의적 해결책</li>
+</ul>
+</li>
+<li>구체화의 문제
+<ul>
+<li>글의 분량</li>
+<li>내용을 구체적이고 자세하게 쓸 수 있도록 주제를 좁혀서 잡기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>생각을 정리하고 자료 모으기</p>
+<ul>
+<li>내용 만들기
+<ul>
+<li>관찰하고 분석한 내용을 바탕으로 넣을 내용을 생각대로 써 보는것</li>
+<li>순서에 상관하지 않고 적기</li>
+<li>각 내용마다 기호로 표시 (eg. (1), (2), ...)</li>
+<li>논리 개요도를 작성하는데 도움</li>
+<li>적절한 예가 있으면 같이 쓰기</li>
+<li>근거가 불확실한 것은 '?' 표시하기</li>
+</ul>
+</li>
+<li>제재 -&gt; 에세이를 쓰는 데 필요한 자료
+<ul>
+<li>사건, 사실, 물건, 실례, 통계자료</li>
+<li>전문가들의 견해</li>
+<li>제재 선정
+<ul>
+<li>주제를 뒷받침</li>
+<li>풍부하고 다양하고 새로운 것</li>
+<li>출처가 분명</li>
+<li>독자들의 관심을 끌 수 있는 것</li>
+<li>사실과 견해를 구분</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>논리 개요도 작성하기</p>
+<ul>
+<li>3단 구성
+<ul>
+<li>서론-본론-결론</li>
+</ul>
+</li>
+<li>4단 구성
+<ul>
+<li>기 승 전 결</li>
+</ul>
+</li>
+<li>5단 구성
+<ul>
+<li>문제제기 - 자신의 견해 - 반대 견해 - 반대 견해 논박 - 마무리</li>
+</ul>
+</li>
+<li>개요도를 작성할 때 유의할 점
+<ul>
+<li>소주제를 중심으로 노리 정연하게 작성</li>
+<li>논증의 요점이 잘 드러나도록</li>
+<li>소주제와 제재가 잘 호응이 되도록</li>
+<li>논리 개요도만 보아도 글의 전체 내용을 짐작할 수 있을 정도로</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>초안 작성하기</p>
+<ul>
+<li>논리 개요도를 바탕으로 쓰기</li>
+<li>그렇지만 너무 얽매일 필요는 없다</li>
+<li>유의할 점
+<ul>
+<li>컴퓨터로 작성</li>
+<li>자세하고 구체적으로</li>
+<li>앞 문장 혹을 앞 단락의 말꼬리를 놓치지 않도록 (자연스럽게)</li>
+<li>종합적으로 생각하면서</li>
+<li>보충할 부분은 표시하면서</li>
+<li>표준국어대사전 이용</li>
+<li>예정된 분량보다 좀 더 길게</li>
+<li>잘 안풀리면 조금 쉬었다가, 자리는 멀리 떠나지 않는다</li>
+<li><strong>종결어미</strong>
+<ul>
+<li>평서형, 의문형, 명령형, 청유형, 감탄형</li>
+</ul>
+</li>
+<li><strong>비유법</strong>
+<ul>
+<li>직유법, 은유법, 풍유법, 의인법, 대유법</li>
+</ul>
+</li>
+<li><strong>강조법</strong>
+<ul>
+<li>영탄법, 열거법, 점층법, 대조법, 강조법</li>
+</ul>
+</li>
+<li><strong>변화법</strong>
+<ul>
+<li>도치법, 설의법, 대구법, 문답법, 반어법, 인용법</li>
+</ul>
+</li>
+<li>정의, 예시, 비교, 대조, 일반화, 묘사, 분류, 분석, 등의 다양한 방법 쓰기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>들머리 잘 쓰는 법</p>
+<ol>
+<li>글의 화제(Topic)을 미리 밝힘</li>
+<li>글의 소재나 사건을 제시함</li>
+<li>핵심용어나 낱말의 뜻을 규정함</li>
+<li>화제가 되고 있는 말이나 일화를 소개함</li>
+<li>글의 주제와 관련된 내용을 직접 제시함</li>
+</ol>
+</li>
+<li>
+<p>본문 쓰기를 잘하는 법</p>
+<ol>
+<li>주제에 초점이 맞도록 해야 한다</li>
+<li>화제의 내용과 범위에 맞도록 해야 한다
+<ul>
+<li>분량 보다는 안목과 깊은 통찰력이 더 중요하다</li>
+</ul>
+</li>
+<li>단락 전개가 긴밀하게 되도록 해야 한다</li>
+<li>새로운 인식에 따른 독창성 있는 내용을 담도록 해야 한다</li>
+<li>그의 갈래에 따른 자연스러운 단락 전개가 되도록 해야 한다</li>
+<li>글의 형식이 다양하고 리듬감이 있도록 해야 한다</li>
+</ol>
+</li>
+<li>
+<p>마무리 쓰기를 잘하는 법</p>
+<ol>
+<li>본문 내용을 보충함으로써 마무리하기</li>
+<li>본문을 요약하믕로써 마무리하기</li>
+<li>제언이나 전망을 덧붙임으로써 마무리하기</li>
+</ol>
+</li>
+<li>
+<p>교정하기 
+-내용면, 구성면, 표현면으로 나누어 교정하고, 시간 간격을 두고서 해야 편견에서 벗어날 수 있다</p>
+<ul>
+<li>내용면
+<ol>
+<li>주제의 선명성</li>
+<li>글 전체 내용의 통일성</li>
+<li>제재의 타당성</li>
+<li>내용의 창의성</li>
+</ol>
+</li>
+<li>구성면
+<ol>
+<li>단락 나누기
+<ul>
+<li>단락이 소 주제문을 중심으로 잘 나누어져 있는지</li>
+<li>뒤받침 문장들이 역할을 잘 하는지</li>
+</ul>
+</li>
+<li>단락간의 연결
+<ul>
+<li>긴밀하고 자연스러운가? 
+<ul>
+<li><strong>긴밀하다</strong>?</li>
+</ul>
+</li>
+<li>동일어, 동의어, 지시어, 문장 접속어, 생략등의 단락을 엮어주는 요소</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>표현면
+<ol>
+<li>어휘사용의 적절성</li>
+<li>문장의 정확성</li>
+<li>표현의 다양성</li>
+<li>문체의 적절성</li>
+<li>맞춤법 규정 준수</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>제목 정하기</p>
+<ul>
+<li>너무 기계적 -&gt; 흥미를 떨어뜨림</li>
+<li>너무 기교 부림 -&gt; 글의 내용과 동 떨어짐</li>
+<li>주제를 잘 드러낼 수 있는 창의성 있는 제목</li>
+<li>제목은 글의 갈래에 따라 달라질 수 있다
+<ul>
+<li>논증문, 설득문, 비평문, 설명문과 같이 주장이나 설명을 목적으로 하는 글 -&gt; <strong>명시적인 제목</strong></li>
+<li>묘사문, 서사문과 같은 느낌이나 감동을 전달하는 것을 목적으로 하는 글 -&gt; <strong>암시적인 제목</strong>
+<ul>
+<li>암시적인 제목의 예시 by ChatGPT
+<ul>
+<li>&quot;끝없는 여정&quot;</li>
+<li>&quot;시간의 칼날&quot;</li>
+<li>&quot;길을 찾아서&quot;</li>
+<li>&quot;저승사자의 초대&quot;</li>
+<li>&quot;다시 돌아온 봄&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>제목의 다양한 면
+<ul>
+<li>구조면 -&gt; 단어 형태, 구절 형태, 문장 형태</li>
+<li>내용면 -&gt; 글의 주제나 목적과 관련된 형태, 글의 제재와 관련된 형태</li>
+<li>표현면 -&gt; 명시적인 형태, 암시적인 형태</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="그냥-새롭게-배운거"><a class="header" href="#그냥-새롭게-배운거">그냥 새롭게 배운거</a></h2>
+<ul>
+<li>학술지 vs 논문
+<ul>
+<li>Journal vs Paper</li>
+<li>학술지는 &quot;여러 학문 분야에서 연구자들이 발표한 원고들이 심사를 거쳐 게시되는 학술적인 저널입니다&quot; - ChatGPT</li>
+<li>&quot;논문은 이러한 학술지에 실리는 논문들을 일컫는 말로, 학술적인 연구 결과를 발표하고자 하는 글&quot; - ChatGPT</li>
+<li>&quot;학술지는 여러 분야의 연구자들이 각자의 연구를 발표하고, 논문은 그 중에서도 하나의 연구 결과를 구체적으로 설명하는 글&quot; - ChatGPT</li>
+</ul>
+</li>
+</ul>
+<h2 id="주말에-할-일"><a class="header" href="#주말에-할-일">주말에 할 일</a></h2>
+<ul>
+<li><strong>기말과제 예시 출력해서 읽어보기</strong></li>
+<li><strong>팀으로 하는 비평문 후보 뽑아서 출력해서 읽어보기 &amp; 팀원과 공유하기</strong></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="linear-algebra"><a class="header" href="#linear-algebra">Linear Algebra</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ch1-s1"><a class="header" href="#ch1-s1">Ch1 s1</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ch1-s2-3"><a class="header" href="#ch1-s2-3">Ch1 s2-3</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="operating-systems"><a class="header" href="#operating-systems">Operating Systems</a></h1>
+<p>홍신 교수님 </p>
+<p><a href="https://github.com/hongshin/OperatingSystem">Class Github</a></p>
+<p>주교재 :  <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/">Operating Systems: Three Easy Pieces</a></p>
+<p>No NFC !</p>
+<p>4~6 assignments</p>
+<ul>
+<li>week 1: Ch 1,2</li>
+<li>week 2: Ch 3, 4, 5</li>
+<li>week 3: Ch 6, 7, 8
+...</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-5"><a class="header" href="#introduction-5">Introduction</a></h1>
+<h2 id="what-is-computer"><a class="header" href="#what-is-computer">What is Computer?</a></h2>
+<ul>
+<li>
+<p>Computer vs Calculator</p>
+</li>
+<li>
+<p>Fundamental contructing units of a computer</p>
+<ul>
+<li>CPU - memory</li>
+</ul>
+</li>
+<li>
+<p>What is OS?</p>
+<ul>
+<li>&quot;a body of <strong>software</strong> that enable various programs to run effectively and efficiently on computer with different hardware devices&quot;</li>
+<li>suit of differnet kinds of program</li>
+<li>work as a <strong>platform</strong> for application program and hardware devices
+<ul>
+<li><strong>platform</strong> where various parts come to gether and communicate together... (???)</li>
+</ul>
+</li>
+<li>means a <strong>suite of system programs</strong> which support construction and operation of application programs</li>
+</ul>
+</li>
+<li>
+<p>Motivation</p>
+<ul>
+<li>sophiscated calculator?</li>
+<li>What is computer?
+<ul>
+<li>Processor + Memory (Von Neumann)</li>
+<li>Memory is just a storage of array of bytes</li>
+<li>Processor -&gt; <strong>PC</strong></li>
+<li>What happens? 
+<ul>
+<li>processor &quot;fetch&quot; the code from memory</li>
+<li>&quot;decode&quot;</li>
+<li>execute</li>
+<li>store</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Constructing a software system by combining existing ones</li>
+<li>importing progrmas from other systems</li>
+<li>managing a diversity and variety of hardware devices</li>
+<li>providing interactive features in software system (eg. networking)
+<ul>
+<li>to run things simultaneously the definition of computer was not enough (processor + memory)</li>
+</ul>
+</li>
+<li>Problems
+<ul>
+<li>portability issue (hardware-dependency)</li>
+<li>interoperatability issue</li>
+<li>scheduling issues</li>
+<li>reourse management issue (efficiency and scalability)</li>
+<li>safety &amp; security issues
+<ul>
+<li>some program could access some sensitive data on stored on my computer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Approach -&gt; solution to addressed problems</p>
+<ol>
+<li><strong>Virtualize a computer system</strong>
+<ul>
+<li>provide a conistent and simple view to application and programmers (for <em>portability</em>)</li>
+<li>provide <em>common interfaces</em> for an application program to communicate with hardware units and other application programs (for <em>interoperatability</em>)</li>
+<li>distribute hardware resources to efficiently serve request from application programs (for <em>concurrency</em>, <em>efficiency</em> and <em>scalability</em>)</li>
+<li>forbid an application to access the critical control and internals of a computer system and the other programs (for safety and <em>security</em>)</li>
+</ul>
+</li>
+<li>Divise different policies of coordinating application programs and then use a suitable one at a specific context</li>
+</ol>
+</li>
+<li>
+<p>Realizing those two concepts is the key to understanding of what is OS</p>
+</li>
+<li>
+<p>Solution -&gt; OS Kernel</p>
+<ul>
+<li>Have <strong>library</strong> programs that provide &quot;helper&quot; function with common interfaces to application programs
+<ul>
+<li>for accessing HW components and for communicating with other programs</li>
+</ul>
+</li>
+<li>Let these helper functions take th econtrol of and execution form its caller to do sensitive operations under protection from the caller application
+<ul>
+<li>It's more like &quot;officer&quot; than just &quot;helper&quot; </li>
+<li>Extends a computer architecture to provide a special instruction to call these officer functions (requires HW support)</li>
+<li>system call</li>
+</ul>
+</li>
+<li>When they work. officer functions not only serve request, but also regulate and manage the resources that the application uses, especiallly in consideration with other application programs in the system
+<ul>
+<li>Then it's more like &quot;governor&quot; than &quot;officer&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Solution -&gt; System Progrmas</p>
+<ul>
+<li>To make a human user and an application easily interact each other, there exists parts of operating systems running upon kernel called <em>system programs</em>
+<ul>
+<li>e.g. compiler, linker, loader, shell, service daemons , ...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Solution -&gt; Abstraction</p>
+<ul>
+<li>3 models
+<ol>
+<li>Process
+<ul>
+<li>an abstract object representing a running instance of a program and all resources that it uses</li>
+</ul>
+</li>
+<li>Virtual memory
+<ul>
+<li>an abstraction of memory locations (address space)</li>
+</ul>
+</li>
+<li>File system
+<ul>
+<li>an abstract object for communication channel (streams)
+<ul>
+<li>to storage devices (i.e. permanent memory)</li>
+<li>to other programs</li>
+<li>to other systms via network</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>Concurrency</p>
+<ul>
+<li>each program making continuous progress</li>
+</ul>
+</li>
+<li>
+<p>When program is running, memory translation is always happening</p>
+<ul>
+<li>by frame pointer (FP)</li>
+<li>and the FP is managed by the OS</li>
+</ul>
+</li>
+</ul>
+<h1 id="ch2-introduction-to-operating-systems"><a class="header" href="#ch2-introduction-to-operating-systems">Ch2 Introduction to Operating Systems</a></h1>
+<ul>
+<li>
+<p>Running Program</p>
+<ul>
+<li>fetch - decode - execute -&gt; repeat (Von Neumann model)</li>
+</ul>
+</li>
+<li>
+<p>OS</p>
+<ul>
+<li>primary goal: make system <strong>easy to use</strong></li>
+<li>method: <strong>virtualization</strong></li>
+<li>virtualization
+<ul>
+<li>OS referred to virtual machine</li>
+<li>physical resource -&gt; virtual form</li>
+<li>OS exports few hundred <strong>system call</strong>s for application to use
+<ul>
+<li>can also say that the OS provides a <strong>standard library</strong> to applications</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>resource manager
+<ul>
+<li>resource: CPU, memory, disk </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CRUX OF THE PROBLEM</p>
+</li>
+<li>
+<p>&quot;how does the operating system virtualize resources?&quot;</p>
+<ul>
+<li>OS implements <strong>mechanisms</strong> and <strong>policies</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="21-virtualizing-the-cpu"><a class="header" href="#21-virtualizing-the-cpu">2.1 Virtualizing the CPU</a></h2>
+<ul>
+<li>Creating an illusion that the system has a large number of virtual CPUs
+<ul>
+<li>
+<p>run many programs at once -&gt; virtualizing the CPU</p>
+</li>
+<li>
+<p>how to decide which should run at specific time?</p>
+<ul>
+<li><strong>policy</strong></li>
+</ul>
+</li>
+<li>
+<p>resource manager</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="22-virtualizing-memory"><a class="header" href="#22-virtualizing-memory">2.2 Virtualizing Memory</a></h2>
+<ul>
+<li>model of physical memory
+<ul>
+<li>simply just an array of bytes</li>
+</ul>
+</li>
+<li>virtualizing memory
+<ul>
+<li>private virtual address space</li>
+</ul>
+</li>
+</ul>
+<h2 id="23-concurrency"><a class="header" href="#23-concurrency">2.3 Concurrency</a></h2>
+<ul>
+<li>Problems that arise when working with many thigs at once
+<ul>
+<li>OS, modern multi-threded programs</li>
+<li><strong>Thread</strong>:
+<ul>
+<li>function running within the same memory space as other functions</li>
+<li>more than one of them active at a time</li>
+<li>Q: What does it mean by active?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CRUX OF THE PROBLEM
+<ul>
+<li>&quot;How can we use primitives and mechanisms to solve the problems of concurrency?&quot;</li>
+</ul>
+</li>
+<li>problems occur when reading file at the same time
+<ul>
+<li>because load, update, write instructions are not executed <strong>atomically</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="24-persistence"><a class="header" href="#24-persistence">2.4 Persistence</a></h2>
+<ul>
+<li>DRAM is volatile</li>
+<li>I/O device
+<ul>
+<li>hard drive, solid-state drives</li>
+</ul>
+</li>
+<li>OS -&gt; manage disk using program -&gt; file system</li>
+<li>disk space is shared (not virtualized like CPU and memory)</li>
+<li>when creating and writing to file
+<ul>
+<li>open(), write(), close(); these <strong>system calls</strong> are routed to <strong>file system</strong> which handles the request and return result</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="process"><a class="header" href="#process">Process</a></h1>
+<h2 id="39-thur"><a class="header" href="#39-thur">3/9 (Thur)</a></h2>
+<p><img src="ITP30002-02/img/23-03-10-14-25-59.png" alt="Lecture Note" /></p>
+<h3 id="lecture-summary"><a class="header" href="#lecture-summary">Lecture Summary</a></h3>
+<ul>
+<li>What kind of problems appear when sharing a computer?
+<ul>
+<li>How to decide who should use the computer at a specific time</li>
+<li>How to manage time of sharing</li>
+<li>A process taking over entire space</li>
+<li>A process corrupting the entire system</li>
+<li>many other..</li>
+</ul>
+</li>
+<li>OS is created to solve the problems that arise when sharing a common resource (CPU and memory)</li>
+</ul>
+<blockquote>
+<p>Time Sharing</p>
+</blockquote>
+<ul>
+<li>Time Sharing is the concept that is used in OS to share resources among multiple processes
+<ul>
+<li>It is divided into 2 smaller concepts
+<ol>
+<li>Mechanism</li>
+<li>Policies</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="notes-from-video"><a class="header" href="#notes-from-video">Notes from video</a></h2>
+<ul>
+<li>
+<p>Process</p>
+<ul>
+<li>a running instance of a program
+<ul>
+<li>program vs process</li>
+<li>static / dynamic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Constitution of Program Execution Content</p>
+<ul>
+<li>What kind of information are needed to be stored to resume process after pausing?</li>
+</ul>
+<ol>
+<li>Memory states
+<ul>
+<li>address space</li>
+<li>this just stays in the memory space</li>
+</ul>
+</li>
+<li>CPU states
+<ul>
+<li>this must be copied over to memory space to be safely stored</li>
+<li>registers: general-purpose and special-purpose</li>
+<li>cache: they are for performance of the CPU computation
+<ul>
+<li>When doing timesharing, cache can not be utilized most efficiently</li>
+<li>performance of the cache will be degraded</li>
+</ul>
+</li>
+<li>Recent computer architecture provide some functionality to utilize cache when performin context switching</li>
+</ul>
+</li>
+<li>I/O information</li>
+</ol>
+<ul>
+<li>Above 3 informations are needed
+<ul>
+<li>They are taken <strong>snapshot</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Life Cycle of a Process</p>
+<ul>
+<li>Process creation
+<ul>
+<li>resource allocation
+<ul>
+<li>independent space: memory space, </li>
+<li>every process open some basic files (stdin, stdout, stderr) -&gt; basic file resources</li>
+<li>under kernel, it manages some datastructure that manages currently running process. A new object must be created</li>
+</ul>
+</li>
+<li>loading : brining binary code (program) to address space of process (from disk storage)
+<ul>
+<li>eagle(?) (eagerly) manner</li>
+<li>lazy manner
+<ul>
+<li>
+<p>Instead of taking the whole snapshot of the program, only part of it is taken snapshot</p>
+</li>
+<li>
+<p>binary code</p>
+</li>
+<li>
+<p>executable code</p>
+<ul>
+<li>initial part of the code</li>
+</ul>
+</li>
+<li>
+<p><strong>decode the metadata of the program allignment</strong></p>
+<ul>
+<li><strong>decode</strong></li>
+<li><strong>metadata</strong></li>
+<li><strong>program allignment</strong></li>
+</ul>
+</li>
+<li>
+<p>Questions: does the programmer have to provide the initial instruction that can be loaded in lazy manner?</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Process</p>
+<ul>
+<li>a running instance of an application program</li>
+<li>a process is an object of OS to represent a status of a program execution</li>
+<li>a process progresses in an instruction-by-instruction fashion</li>
+<li>a program is a pssive entity resided in a storage (e.g. an executable file) whereas a process is an active entity of the CPU and memory status
+<ul>
+<li>a process starts when executable file loaded into memory</li>
+<li>multiple users may run multiple processes for a single program</li>
+<li>program -&gt; initial memory status of a process</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>A process is an object to hold all entities to represent the running status of a program</p>
+<ul>
+<li>CPU snapshot (kernel space)
+<ul>
+<li>Program counter</li>
+<li>Registers</li>
+</ul>
+</li>
+<li>Memory snapshot (user space)
+<ul>
+<li>program code (also called text section)</li>
+<li>Stack section: Function parameters, return addresses, local variables</li>
+<li>Data section: memory for containing global variables</li>
+<li>Heap section: memory for dynamically allocated during run time</li>
+</ul>
+</li>
+<li><strong>State</strong> (kernel space)</li>
+</ul>
+</li>
+<li>
+<p>An OS can make multiple processes run at the same time by <strong>time-sharing</strong> a processor and <strong>space-sharing</strong> main memory</p>
+</li>
+<li>
+<p>Process Creation</p>
+<ul>
+<li>
+<p>A process is identified and managed via a process identifier (pid)</p>
+</li>
+<li>
+<p>A parent process can <strong>spawn</strong> a child process to <strong>delegate</strong> a subtask</p>
+<ul>
+<li>A process can spawn multiple children proceses</li>
+<li>A parent process can run concurrently with its children processes</li>
+</ul>
+</li>
+<li>
+<p>init d, system d -&gt; usually pid = 1</p>
+<ul>
+<li>every processor is essentially a child of init d</li>
+<li>this is a <strong>good design</strong>
+<ul>
+<li>why?</li>
+<li>Parent process - Child process</li>
+<li>Caller function - Callee function</li>
+<li>
+<h2 id="multi-processing-is-basically-to-parallelize-the-task"><a class="header" href="#multi-processing-is-basically-to-parallelize-the-task">Multi-processing is basically to parallelize the task</a></h2>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="computer-graphics"><a class="header" href="#computer-graphics">Computer Graphics</a></h1>
+<p><img src="ITP40003-01/img/23-03-07-08-54-30.png" alt="강의 계획서" /></p>
+<h1 id="some-questions"><a class="header" href="#some-questions">Some Questions</a></h1>
+<ul>
+<li>
+<p>요즘 AI가 엄청 뜨고 있고 효과가 정말 좋은 것 같다</p>
+<ul>
+<li>Example을 들어야 할 거 같은데 </li>
+<li>기존 알고리즘 vs AI</li>
+</ul>
+</li>
+<li>
+<p>근데 여기서 AI가 점점 더 발전하게 되면 기존의 방법들은 무용지물이 되는게 아닌가 하는 생각이 드는데 교수님은 어떻게 생각하십니까? </p>
+<ul>
+<li>AI를 학습하는 과정에서 기존의 알고리즘들이 사용 되는건가?</li>
+<li>AI를 돌릴 수 없는 소형 low-power 임베디드 시스템
+<ul>
+<li>AI를 저전력으로 임베디드에서 돌릴 수 있는 기술(하드웨어 &amp; 소프트웨어)들도 많이 발전하고 있다</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>최신 컴퓨터 그래픽 기술 동향과 발전 방향의 이해</p>
+</li>
+<li>
+<p>상담의 목적 by ChatGPT</p>
+<ol>
+<li>진로에 대한 조언</li>
+<li>학업에 대한 요청 </li>
+<li>전문 지식 습득을 위한 질문</li>
+<li>기타 문제 해결을 위한 상담</li>
+<li></li>
+</ol>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-6"><a class="header" href="#introduction-6">Introduction</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="week-2-2"><a class="header" href="#week-2-2">Week 2</a></h1>
+<h2 id="37-tue-1"><a class="header" href="#37-tue-1">3/7 (Tue)</a></h2>
+<p><img src="ITP40003-01/img/23-03-10-16-51-37.png" alt="Lecture Note" /></p>
+<ul>
+<li>
+<p>Week 1 review</p>
+<ul>
+<li>Basic Elements of CG 
+<ul>
+<li><strong>Object</strong>, <strong>light source</strong>, <strong>camera</strong></li>
+</ul>
+</li>
+<li>Output of CG is 2D image
+<ul>
+<li>we don't have 3D display yet</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Khan Academy's Intro to Rendering</p>
+<ul>
+<li>last phase of production </li>
+<li>3D -&gt; realized to 2D image</li>
+<li>color == light 
+<ul>
+<li>need to find color for each pixel</li>
+<li>how to calculate light? 
+<ul>
+<li>simple</li>
+<li>complex -&gt; more realistic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How our Eyes work
+<ul>
+<li>Photoreceptors
+<ul>
+<li>Rods -&gt; intensity sensor</li>
+<li>Cones -&gt; color sensor (RGB)</li>
+<li>Rods and Cones have <strong>Rhodopsin</strong> in <strong>optic disks</strong> which converts light signal into neural impulse</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How to represent 3D objects?</p>
+<ul>
+<li>list of vertices and faces</li>
+<li>voxel</li>
+</ul>
+</li>
+<li>
+<p>New technology</p>
+<ul>
+<li>Foveated rendering
+<ul>
+<li>This is technology that use less computational power for  rending locations that are not eye focused</li>
+<li>This is similar to how we perseve real world through our eye</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When rending the 3D scene and when transition, rotation, scaling happens, actually the camera stayus the same and </p>
+</li>
+<li>
+<p>peripheral | blurral | phobia  </p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="web3kaist"><a class="header" href="#web3kaist">Web3@KAIST</a></h1>
+<p>link: http://web3classdao.xyz/kaist/</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="empty"><a class="header" href="#empty">Empty</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="first-meeting"><a class="header" href="#first-meeting">First Meeting</a></h1>
+<p>Web3 = read + write + own</p>
+<ul>
+<li>ownership of data</li>
+</ul>
+<p>There is yet no killer app for web3</p>
+<p>Idea:</p>
+<ul>
+<li>
+<p>source: <a href="https://www.upgrad.com/blog/blockchain-project-ideas-for-beginners-students/">upGrad</a></p>
+</li>
+<li>
+<p>Trusted crowdfunding platform using a smart contract</p>
+</li>
+<li>
+<p>Peer to Peer ridesharing</p>
+<ul>
+<li>drivers own their own data</li>
+<li>카카오택시와 같은 독점 기업은 모든 데이터를 가지고 있다</li>
+<li>develop a smart contract that directly connects the driver and the rider without the interference of any third party</li>
+<li>-&gt; 비슷하게 배달? - 배달 업체에서 통제하고 수수료를 많이 가져가는데 
+<ul>
+<li>배달부와 고객을 직접 연결 시킬수 있다면..?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>상품을 바코드 대신 블럭체인으로 등록 관리</p>
+<ul>
+<li>진품 확인</li>
+</ul>
+</li>
+<li>
+<p>Blockchain-based voting system</p>
+<ul>
+<li>transparency and publicly verifiable</li>
+<li>하지만 예를 들어 대통령 선거의 경우 개인의 투표는 알리면 안된다..?
+<ul>
+<li>사용자 정보는 숨겨져 있어야 하고 아무도 알 수 있어서는 안된다
+<ul>
+<li>그럼 transparency issue가 발생하는거 아닌가</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Transparent and genuine charity application</p>
+<ul>
+<li>directly connect donators and the needy people</li>
+</ul>
+</li>
+<li>
+<p>Decentralized web hosting system</p>
+<ul>
+<li>split content and link them together using a blockchin registry</li>
+<li>non-failing server..?</li>
+<li>Blockchain service provider might fail?
+<ul>
+<li>not sure</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Disk space renting system</p>
+<ul>
+<li>share unused disk space on peer-to-peer network using blockchain</li>
+<li>decentralized</li>
+<li>But what if the disk space provider is just a normal user like me and shuts down computer when not in use?</li>
+</ul>
+</li>
+<li>
+<p>Loyalty points exchange system</p>
+</li>
+<li>
+<p>Taceback your food to its source</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>source: <a href="https://www.connectbit.com/blockchain-applications/">connectbit</a></p>
+</li>
+<li>
+<p>Reduce Insurance Fraud</p>
+<ul>
+<li>record medical procedures and time stamp</li>
+</ul>
+</li>
+<li>
+<p>Transfer digital wills</p>
+<ul>
+<li>유산 상속 using smart contract</li>
+<li>상속세 회피 가능?</li>
+</ul>
+</li>
+<li>
+<p>Predict the stock markets</p>
+<ul>
+<li>Augur</li>
+<li>lendoit ?</li>
+<li>lending money</li>
+</ul>
+</li>
+<li>
+<p>Trade solar power with neighbors</p>
+</li>
+<li>
+<p>registy of land ownership</p>
+</li>
+<li>
+<p>Fill up empty hotel rooms</p>
+</li>
+<li>
+<p>Manage user reputation</p>
+<ul>
+<li>Like in Airbnb</li>
+<li>data is yours!
+<ul>
+<li>all ratings are done using </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>peer to peer application for online marketplace</p>
+</li>
+<li>
+<p>identity</p>
+</li>
+<li>
+<p>peer to peer ride sharing</p>
+<ul>
+<li>지금 한동의 itaxi 같은걸 blockchain으로 구현 한다면 어떤 이점이 있을까</li>
+<li>좋은 사용자인지 나쁜 사용자 인지는 어떻게 구분할 수 있을까</li>
+<li>가입 절차는?</li>
+<li>사용자 인증을 어떻게 하지?</li>
+</ul>
+</li>
+<li>
+<p>데이터를 관리하는 central 유닛에 대한 이용료를 제공하는 경우가 많은데</p>
+<ul>
+<li>이걸 blockchain으로 자신의 데이터는 자신이 소유하도록 만들고</li>
+<li>따라서 중앙 처리 기관에서 데이터를 관리하는 비용을 개인이 부담하도록</li>
+<li>transfer 같은걸 할 때 비용이 발생하는거 같은데</li>
+<li>이 비용을 개인이 부담</li>
+<li>그럼 서비스를 만든 나는 어떻게 돈을 벌 수 있을까</li>
+<li>서비스를 만들어서 제공하는데 쓴 노력은 어떻게 보상 받는가</li>
+</ul>
+</li>
+<li>
+<p>Storj.io</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ghost-flutter-study"><a class="header" href="#ghost-flutter-study">GHOST Flutter Study</a></h1>
+<ul>
+<li>
+<p>GHOST 26기 졸업생 15학번 박민준 선배님께서 가르쳐 주시는 Flutter 수업</p>
+</li>
+<li>
+<p>잠정적으로(?) 화요일, 목요일 밤 23~24 진행</p>
+</li>
+<li>
+<p>2시간 중 1시간은 Flutter 스터디, 1시간은 피드백과 코드 리뷰로 진행</p>
+</li>
+<li>
+<p>첫 모임 전에 Flutter 개발환경 구성 완성: </p>
+<ul>
+<li>https://docs.flutter.dev/get-started/install</li>
+</ul>
+</li>
+<li>
+<p>모임은 Discord로 진행</p>
+</li>
+</ul>
+<h2 id="유용한-사이트-목록"><a class="header" href="#유용한-사이트-목록">유용한 사이트 목록</a></h2>
+<ul>
+<li>fluttermapp.com/widgets</li>
+<li>www.fluttermapp.com/widgets</li>
+<li>flutter.dev</li>
+<li>pub.dev</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="flutter-레이아웃-기초-위젯-가이드"><a class="header" href="#flutter-레이아웃-기초-위젯-가이드">Flutter 레이아웃 기초 위젯 가이드</a></h1>
+<p><a href="https://ahead-raincoat-1ab.notion.site/1-0ea4628e1b9141f7b643ced6bb54d560">[Notion] 민준 선배님 정리 노트</a></p>
+<h2 id="숙제"><a class="header" href="#숙제">숙제</a></h2>
+<ul>
+<li>내가 평소에 자주 사용하는 앱 보고 Flutter로 만든다면 Layout 어떻게 구성할지 대충 만들어 오기</li>
+</ul>
+<h3 id="네이버-웹툰-cloning"><a class="header" href="#네이버-웹툰-cloning">네이버 웹툰 cloning(?)</a></h3>
+<p>새로 배운 Widget들:</p>
+<ul>
+<li>Sliver 관련
+<ul>
+<li>Sliver 사전적 의미: &quot;세로로 자르거나 잘라낸 얇은 조각. 파편&quot;</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="widgets-continued"><a class="header" href="#widgets-continued">Widgets Continued</a></h1>
+<p>Button</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="notes"><a class="header" href="#notes">Notes</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+    </div>
+    </body>
+</html>

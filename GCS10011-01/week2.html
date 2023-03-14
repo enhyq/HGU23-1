@@ -1,0 +1,656 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Week 2 - HGU23-1</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../CCE33006-01/index.html"><strong aria-hidden="true">1.</strong> OpenAI and Art</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../CCE33006-01/week1.html"><strong aria-hidden="true">1.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../CCE33006-01/week2.html"><strong aria-hidden="true">1.2.</strong> Handong Universe</a></li></ol></li><li class="chapter-item expanded "><a href="../ECE30007-01/index.html"><strong aria-hidden="true">2.</strong> AI프로젝트입문</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECE30007-01/week1.html"><strong aria-hidden="true">2.1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECE30007-01/hw1.html"><strong aria-hidden="true">2.1.1.</strong> HW1</a></li></ol></li><li class="chapter-item expanded "><a href="../ECE30007-01/week2.html"><strong aria-hidden="true">2.2.</strong> Python Basics</a></li></ol></li><li class="chapter-item expanded "><a href="../ECE30030-01/index.html"><strong aria-hidden="true">3.</strong> 데이타베이스</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECE30030-01/week1.html"><strong aria-hidden="true">3.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../ECE30030-01/week2.html"><strong aria-hidden="true">3.2.</strong> Week 2</a></li><li class="chapter-item expanded "><a href="../ECE30030-01/week3.html"><strong aria-hidden="true">3.3.</strong> Week 3</a></li></ol></li><li class="chapter-item expanded "><a href="../GCS10011-01/index.html"><strong aria-hidden="true">4.</strong> 이공계 글쓰기</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../GCS10011-01/week1.html"><strong aria-hidden="true">4.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../GCS10011-01/week2.html" class="active"><strong aria-hidden="true">4.2.</strong> Week 2</a></li></ol></li><li class="chapter-item expanded "><a href="../GEK10082-03/index.html"><strong aria-hidden="true">5.</strong> 선형대수학</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../GEK10082-03/week1.html"><strong aria-hidden="true">5.1.</strong> Ch1 s1</a></li><li class="chapter-item expanded "><a href="../GEK10082-03/week2.html"><strong aria-hidden="true">5.2.</strong> Ch1 s2-3</a></li></ol></li><li class="chapter-item expanded "><a href="../ITP30002-02/index.html"><strong aria-hidden="true">6.</strong> Operating Systems</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ITP30002-02/week1.html"><strong aria-hidden="true">6.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../ITP30002-02/week2.html"><strong aria-hidden="true">6.2.</strong> Process</a></li></ol></li><li class="chapter-item expanded "><a href="../ITP40003-01/index.html"><strong aria-hidden="true">7.</strong> Computer Graphics</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ITP40003-01/week1.html"><strong aria-hidden="true">7.1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../ITP40003-01/week2.html"><strong aria-hidden="true">7.2.</strong> Week 2</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../KAIST_CS492/index.html"><strong aria-hidden="true">8.</strong> Web3@KAIST</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../KAIST_CS492/week1.html"><strong aria-hidden="true">8.1.</strong> Empty</a></li><li class="chapter-item expanded "><a href="../KAIST_CS492/week2.html"><strong aria-hidden="true">8.2.</strong> First Meeting</a></li></ol></li><li class="chapter-item expanded "><a href="../GFS/index.html"><strong aria-hidden="true">9.</strong> GHOST Flutter Study</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../GFS/week1.html"><strong aria-hidden="true">9.1.</strong> Basic Widgets</a></li><li class="chapter-item expanded "><a href="../GFS/week2.html"><strong aria-hidden="true">9.2.</strong> Widgets Continued</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../Notes/index.html">Notes</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">HGU23-1</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="week-2"><a class="header" href="#week-2">Week 2</a></h1>
+<p>비평문 6팀:</p>
+<ul>
+<li>권은혁(21900050)</li>
+<li>최예라(22200750)</li>
+</ul>
+<h2 id="비평문"><a class="header" href="#비평문">비평문?</a></h2>
+<ul>
+<li>평가하는 글</li>
+</ul>
+<h2 id="과학-비평문-scientific-critique"><a class="header" href="#과학-비평문-scientific-critique">과학 비평문 (Scientific Critique)</a></h2>
+<ul>
+<li>평론 -&gt; 평가 대상의 가치를 매김</li>
+<li>본인의 시각에서 객관적으로 평가 (evaluate)
+<ul>
+<li>Q 본인의 시각이면서 객관적이다.. ?</li>
+</ul>
+</li>
+<li>궁극적 목표
+<ul>
+<li>현재의 지식체계와 사회를 발전시키는 기여도를 기준으로 평가</li>
+<li>쉽게 써서 대중들에게 효과적으로 전달</li>
+</ul>
+</li>
+</ul>
+<h2 id="과학-비평문의-종류"><a class="header" href="#과학-비평문의-종류">과학 비평문의 종류</a></h2>
+<ul>
+<li>수필적
+<ul>
+<li>전체 내용 보다는 1,2가지 중점되는 소재나 주제</li>
+<li>자유롭다 -&gt; 주관적 견해 포함</li>
+<li>대중에게 전달 목적</li>
+</ul>
+</li>
+<li>논증적
+<ul>
+<li>전체적으로 분석함으로 가치나 한계를 종합적으로 지적</li>
+<li>논거를 제시해 가면서</li>
+<li>'머리말-본문-맺음말'의 형태</li>
+<li>객관성 확보</li>
+</ul>
+</li>
+</ul>
+<h2 id="준비"><a class="header" href="#준비">준비</a></h2>
+<ol>
+<li>&quot;비평하고자 하는 과학 분야의 정보를 가능한 많이 수집&quot;</li>
+<li>&quot;비평을 할 과학적 대상이 주어지면, 먼저 그 대상을 자세히 분석하여 무엇이 중요하나지를 파악하고, 그 가운데 구체적으로 어떤 것을 비평 대상으로 삼을 것인지를 정해야 한다&quot;</li>
+<li>&quot;수강을 하고 있는 특정 교과목에서 비평과제를 부여하면서그에 대한 비평 지침을 미리 알려 주는 경우에는 이 비평 지침을 염두에 두고 비평 대상물을 분석해야 한다&quot;</li>
+<li>&quot;비평 대상이 되는 책이나 자료를 읽을 때는 적절하게 메모를 하는 것이 필요하다&quot;</li>
+</ol>
+<h2 id="과정"><a class="header" href="#과정">과정</a></h2>
+<ol>
+<li>&quot;창조적이고 비판적으로 자료를 읽고 분석하기&quot;
+<ul>
+<li>핵심적인 주장 찾기</li>
+<li>뒷받침 하는 증거의 설득력</li>
+<li>내용 연결성</li>
+<li>오류</li>
+<li>육하원칙 질문하면서 분석 (Who, When, Where, What, hoW, Why)</li>
+</ul>
+</li>
+<li>&quot;필자가 주장하는 바를 뒷받침하는 데이터나 사실을 확인해 보기&quot;</li>
+<li>&quot;데이터와 자료의 내용을 요약하고 메모하기&quot;</li>
+<li>&quot;비평 대상의 가치를 평가하기&quot;
+<ul>
+<li>이론적이고 객관적인 자료에 근거해서 가치가 있는지 없는지 평가</li>
+<li>Q: 어떤 가치? 어떤 관점으로서의 가치를 말하는 것인가?</li>
+</ul>
+</li>
+<li>&quot;비평문을 작성하기 위한 기획서 만들기&quot;
+<ul>
+<li>~설계도</li>
+<li>기획서에 들어갈 요소들:
+<ul>
+<li>&quot;비평문을 쓰기 위한 대상 선정&quot;</li>
+<li>&quot;비평문의 주제 및 개요 작성&quot;</li>
+<li>&quot;비평문 쓰기를 위한 자료의 수집&quot;</li>
+<li>&quot;자료의 분석 및 비평&quot;</li>
+<li>&quot;비평문의 프레임(frame) 만들기&quot;
+<ul>
+<li>논리 개요도
+<ul>
+<li>서론-본론-결론</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>초안(first draft) 쓰기</li>
+<li>교정하기
+<ul>
+<li>내용면에서의 교정</li>
+<li>구성면에서의 교정</li>
+<li>표현면에서의 교정</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="비평문의-일반적-형식과-내용"><a class="header" href="#비평문의-일반적-형식과-내용">비평문의 일반적 형식과 내용</a></h2>
+<h3 id="들머리-introduction"><a class="header" href="#들머리-introduction">들머리 (Introduction)</a></h3>
+<h3 id="본문-main-body"><a class="header" href="#본문-main-body">본문 (Main body)</a></h3>
+<h3 id="마무리-conclusion"><a class="header" href="#마무리-conclusion">마무리 (Conclusion)</a></h3>
+<h2 id="37-tue"><a class="header" href="#37-tue">3/7 (Tue)</a></h2>
+<p><img src="img/23-03-10-16-17-26.png" alt="Lecture Note" /></p>
+<ul>
+<li>
+<p>글쓰기 배우기 가장 좋은 방법은 -&gt; 1:1 첨삭</p>
+</li>
+<li>
+<p>쓰기의 개념과 범위</p>
+<ul>
+<li>문자 언어의 특성 (음성 언어와의 차이)
+<ul>
+<li>영구성, 산출시간, 거리, 철자, 복잡성, 어휘, 형식성</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>쓰기의 범위</p>
+<ul>
+<li>잘하기 위해 필요한 능력
+<ul>
+<li>쓰기 지식: 언어, 주제, 독자 (AppleBee)</li>
+<li>Canale: 문법, 사회언어학 (사회적 위치), 담화적, 전략적 (이어나가는 전략)</li>
+<li>Tribble: 내용, 맥학, 언어 구조, 쓰기 과정</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>좋은 글이란</p>
+<ul>
+<li>진실성, 독창성, 명확성</li>
+</ul>
+</li>
+<li>
+<p><strong>자기 표절</strong> (self-plagiarism) by ChatGPT</p>
+<ul>
+<li>이미 출판된 자신의 논문이나 연구 보고서 등에서 발표한 내용을 다시 사용하는 것</li>
+<li>동일한 내용을 2번 이상 사용하여 출판하거나 발표하는 것</li>
+<li>학술 연구에서는 용인되지 않는다
+<ul>
+<li>중복 발표하여 독자나 평가자를 속이는 것으로 간주</li>
+<li>연구의 발전을 방해 (?)</li>
+</ul>
+</li>
+<li>사용하기 위해서는 출처를 명확하게 밝혀야 함</li>
+</ul>
+</li>
+</ul>
+<h2 id="질문"><a class="header" href="#질문">질문</a></h2>
+<ul>
+<li>비평문을 비평 (?)</li>
+</ul>
+<h2 id="310-fri"><a class="header" href="#310-fri">3/10 (Fri)</a></h2>
+<p><img src="img/23-03-10-14-35-33.png" alt="Lecture Note" /></p>
+<h3 id="lecture-note-요약"><a class="header" href="#lecture-note-요약">Lecture Note 요약</a></h3>
+<ul>
+<li>
+<p>화제 vs 주제</p>
+<ul>
+<li>화제 -&gt; 이야기 거리</li>
+<li>주제 -&gt; 글을 쓰는 사람이 말하고 싶은 바</li>
+<li>Example
+<ul>
+<li>&quot;비혼모&quot; = 화제</li>
+<li>&quot;비혼모는 좋다&quot; = 주제</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>문단을 구분하는 이유</p>
+<ul>
+<li>문단마다 하고 싶은 이야기 한개 -&gt; 소주제</li>
+<li>너무 길면 안좋다</li>
+</ul>
+</li>
+<li>
+<p>비평적 글쓰기</p>
+<ul>
+<li>문제 분석 -&gt; 해결 방식 제안하는 식으로 쓸 수도 있다</li>
+</ul>
+</li>
+<li>
+<p>서론과 제목은 마지막에 쓰는 것이 좋다</p>
+</li>
+<li>
+<p>논리 개요도</p>
+<ul>
+<li>서론</li>
+<li>본론</li>
+<li>결론</li>
+</ul>
+</li>
+<li>
+<p>강의 책의 Chapter 15읽어보기</p>
+</li>
+</ul>
+<h3 id="chapter-15---과학-에세이-쓰기-전략"><a class="header" href="#chapter-15---과학-에세이-쓰기-전략">Chapter 15 - 과학 에세이 쓰기 전략</a></h3>
+<ul>
+<li>
+<p>과학 에세이 (Scientific essay) = 과학적 내용을 에세이 형식으로 쓴 글</p>
+</li>
+<li>
+<p>과학적 사실을 대중에게 알리고 공감대를 형성하는 목적</p>
+</li>
+<li>
+<p>주제 정하기</p>
+<ul>
+<li>가치의 문제
+<ul>
+<li>독자의 흥미</li>
+<li>사회발전에 도움이 될 만한 것</li>
+</ul>
+</li>
+<li>내용의 문제
+<ul>
+<li>주제에 대해 새롭고 분명한 식견을 가지기</li>
+<li>정확하고 새로운 자료</li>
+<li>창의적 해결책</li>
+</ul>
+</li>
+<li>구체화의 문제
+<ul>
+<li>글의 분량</li>
+<li>내용을 구체적이고 자세하게 쓸 수 있도록 주제를 좁혀서 잡기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>생각을 정리하고 자료 모으기</p>
+<ul>
+<li>내용 만들기
+<ul>
+<li>관찰하고 분석한 내용을 바탕으로 넣을 내용을 생각대로 써 보는것</li>
+<li>순서에 상관하지 않고 적기</li>
+<li>각 내용마다 기호로 표시 (eg. (1), (2), ...)</li>
+<li>논리 개요도를 작성하는데 도움</li>
+<li>적절한 예가 있으면 같이 쓰기</li>
+<li>근거가 불확실한 것은 '?' 표시하기</li>
+</ul>
+</li>
+<li>제재 -&gt; 에세이를 쓰는 데 필요한 자료
+<ul>
+<li>사건, 사실, 물건, 실례, 통계자료</li>
+<li>전문가들의 견해</li>
+<li>제재 선정
+<ul>
+<li>주제를 뒷받침</li>
+<li>풍부하고 다양하고 새로운 것</li>
+<li>출처가 분명</li>
+<li>독자들의 관심을 끌 수 있는 것</li>
+<li>사실과 견해를 구분</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>논리 개요도 작성하기</p>
+<ul>
+<li>3단 구성
+<ul>
+<li>서론-본론-결론</li>
+</ul>
+</li>
+<li>4단 구성
+<ul>
+<li>기 승 전 결</li>
+</ul>
+</li>
+<li>5단 구성
+<ul>
+<li>문제제기 - 자신의 견해 - 반대 견해 - 반대 견해 논박 - 마무리</li>
+</ul>
+</li>
+<li>개요도를 작성할 때 유의할 점
+<ul>
+<li>소주제를 중심으로 노리 정연하게 작성</li>
+<li>논증의 요점이 잘 드러나도록</li>
+<li>소주제와 제재가 잘 호응이 되도록</li>
+<li>논리 개요도만 보아도 글의 전체 내용을 짐작할 수 있을 정도로</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>초안 작성하기</p>
+<ul>
+<li>논리 개요도를 바탕으로 쓰기</li>
+<li>그렇지만 너무 얽매일 필요는 없다</li>
+<li>유의할 점
+<ul>
+<li>컴퓨터로 작성</li>
+<li>자세하고 구체적으로</li>
+<li>앞 문장 혹을 앞 단락의 말꼬리를 놓치지 않도록 (자연스럽게)</li>
+<li>종합적으로 생각하면서</li>
+<li>보충할 부분은 표시하면서</li>
+<li>표준국어대사전 이용</li>
+<li>예정된 분량보다 좀 더 길게</li>
+<li>잘 안풀리면 조금 쉬었다가, 자리는 멀리 떠나지 않는다</li>
+<li><strong>종결어미</strong>
+<ul>
+<li>평서형, 의문형, 명령형, 청유형, 감탄형</li>
+</ul>
+</li>
+<li><strong>비유법</strong>
+<ul>
+<li>직유법, 은유법, 풍유법, 의인법, 대유법</li>
+</ul>
+</li>
+<li><strong>강조법</strong>
+<ul>
+<li>영탄법, 열거법, 점층법, 대조법, 강조법</li>
+</ul>
+</li>
+<li><strong>변화법</strong>
+<ul>
+<li>도치법, 설의법, 대구법, 문답법, 반어법, 인용법</li>
+</ul>
+</li>
+<li>정의, 예시, 비교, 대조, 일반화, 묘사, 분류, 분석, 등의 다양한 방법 쓰기</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>들머리 잘 쓰는 법</p>
+<ol>
+<li>글의 화제(Topic)을 미리 밝힘</li>
+<li>글의 소재나 사건을 제시함</li>
+<li>핵심용어나 낱말의 뜻을 규정함</li>
+<li>화제가 되고 있는 말이나 일화를 소개함</li>
+<li>글의 주제와 관련된 내용을 직접 제시함</li>
+</ol>
+</li>
+<li>
+<p>본문 쓰기를 잘하는 법</p>
+<ol>
+<li>주제에 초점이 맞도록 해야 한다</li>
+<li>화제의 내용과 범위에 맞도록 해야 한다
+<ul>
+<li>분량 보다는 안목과 깊은 통찰력이 더 중요하다</li>
+</ul>
+</li>
+<li>단락 전개가 긴밀하게 되도록 해야 한다</li>
+<li>새로운 인식에 따른 독창성 있는 내용을 담도록 해야 한다</li>
+<li>그의 갈래에 따른 자연스러운 단락 전개가 되도록 해야 한다</li>
+<li>글의 형식이 다양하고 리듬감이 있도록 해야 한다</li>
+</ol>
+</li>
+<li>
+<p>마무리 쓰기를 잘하는 법</p>
+<ol>
+<li>본문 내용을 보충함으로써 마무리하기</li>
+<li>본문을 요약하믕로써 마무리하기</li>
+<li>제언이나 전망을 덧붙임으로써 마무리하기</li>
+</ol>
+</li>
+<li>
+<p>교정하기 
+-내용면, 구성면, 표현면으로 나누어 교정하고, 시간 간격을 두고서 해야 편견에서 벗어날 수 있다</p>
+<ul>
+<li>내용면
+<ol>
+<li>주제의 선명성</li>
+<li>글 전체 내용의 통일성</li>
+<li>제재의 타당성</li>
+<li>내용의 창의성</li>
+</ol>
+</li>
+<li>구성면
+<ol>
+<li>단락 나누기
+<ul>
+<li>단락이 소 주제문을 중심으로 잘 나누어져 있는지</li>
+<li>뒤받침 문장들이 역할을 잘 하는지</li>
+</ul>
+</li>
+<li>단락간의 연결
+<ul>
+<li>긴밀하고 자연스러운가? 
+<ul>
+<li><strong>긴밀하다</strong>?</li>
+</ul>
+</li>
+<li>동일어, 동의어, 지시어, 문장 접속어, 생략등의 단락을 엮어주는 요소</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>표현면
+<ol>
+<li>어휘사용의 적절성</li>
+<li>문장의 정확성</li>
+<li>표현의 다양성</li>
+<li>문체의 적절성</li>
+<li>맞춤법 규정 준수</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>제목 정하기</p>
+<ul>
+<li>너무 기계적 -&gt; 흥미를 떨어뜨림</li>
+<li>너무 기교 부림 -&gt; 글의 내용과 동 떨어짐</li>
+<li>주제를 잘 드러낼 수 있는 창의성 있는 제목</li>
+<li>제목은 글의 갈래에 따라 달라질 수 있다
+<ul>
+<li>논증문, 설득문, 비평문, 설명문과 같이 주장이나 설명을 목적으로 하는 글 -&gt; <strong>명시적인 제목</strong></li>
+<li>묘사문, 서사문과 같은 느낌이나 감동을 전달하는 것을 목적으로 하는 글 -&gt; <strong>암시적인 제목</strong>
+<ul>
+<li>암시적인 제목의 예시 by ChatGPT
+<ul>
+<li>&quot;끝없는 여정&quot;</li>
+<li>&quot;시간의 칼날&quot;</li>
+<li>&quot;길을 찾아서&quot;</li>
+<li>&quot;저승사자의 초대&quot;</li>
+<li>&quot;다시 돌아온 봄&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>제목의 다양한 면
+<ul>
+<li>구조면 -&gt; 단어 형태, 구절 형태, 문장 형태</li>
+<li>내용면 -&gt; 글의 주제나 목적과 관련된 형태, 글의 제재와 관련된 형태</li>
+<li>표현면 -&gt; 명시적인 형태, 암시적인 형태</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="그냥-새롭게-배운거"><a class="header" href="#그냥-새롭게-배운거">그냥 새롭게 배운거</a></h2>
+<ul>
+<li>학술지 vs 논문
+<ul>
+<li>Journal vs Paper</li>
+<li>학술지는 &quot;여러 학문 분야에서 연구자들이 발표한 원고들이 심사를 거쳐 게시되는 학술적인 저널입니다&quot; - ChatGPT</li>
+<li>&quot;논문은 이러한 학술지에 실리는 논문들을 일컫는 말로, 학술적인 연구 결과를 발표하고자 하는 글&quot; - ChatGPT</li>
+<li>&quot;학술지는 여러 분야의 연구자들이 각자의 연구를 발표하고, 논문은 그 중에서도 하나의 연구 결과를 구체적으로 설명하는 글&quot; - ChatGPT</li>
+</ul>
+</li>
+</ul>
+<h2 id="주말에-할-일"><a class="header" href="#주말에-할-일">주말에 할 일</a></h2>
+<ul>
+<li><strong>기말과제 예시 출력해서 읽어보기</strong></li>
+<li><strong>팀으로 하는 비평문 후보 뽑아서 출력해서 읽어보기 &amp; 팀원과 공유하기</strong></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../GCS10011-01/week1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../GEK10082-03/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../GCS10011-01/week1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../GEK10082-03/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
